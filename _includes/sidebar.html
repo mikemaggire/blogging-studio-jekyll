@@ -1,0 +1,33 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Accueil</a>
+
+    {% assign pages_list = site.pages | sort:"title" %}
+    {% for node in pages_list %}
+      {% if node.sidebar != null %}
+      <a class="sidebar-nav-item{% if page.permalink == node.permalink %} active{% endif %}" 
+        {% if (site.baseurl == null) or (site.baseurl =='') %}
+          href="{{ node.permalink }}">{{ node.sidebar }}</a>
+        {% else %}
+          href="{{ site.baseurl }}/{{ node.permalink }}">{{ node.sidebar }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <span class="sidebar-nav-item">Version v{{ site.version }}</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.
+    </p>
+  </div>
+</div>

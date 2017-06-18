@@ -1,0 +1,64 @@
+# (c) mike.maggire 2017
+# Créé à partir de maggire jekyll fast-start template
+
+# Configuration initiale
+title: Blogging Studio Jekyll
+tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
+description: Guides pour creer rapidement des sites web performants et funs avec Jekyll et Visual Studio.
+
+url: http://wiki.maggire.com/blogging-studio-jekyll
+baseurl: ''
+
+# About / Contact
+# Seul le nom est obligatoire
+author:
+  name: Mike Maggire
+  url: https://twitter.com/mikemaggire
+  email: mike.maggire@gmail.com
+  twitter_username: mikemaggire
+  github_username:  mike.maggire
+
+# Le numéro de version du site, à incrémenter au moment des publications
+version: 0.1.0
+
+########################
+# Les variables suivantes ne sont pas à modifier sauf exception
+########################
+
+# encoding & format
+# se référer à http://shopify.github.io/liquid/filters/date/ pour personnaliser le format de date
+encoding: utf-8
+lang: fr
+date_format: "%d/%m/%Y"
+timezone: Europe/Paris
+highlighter: rouge
+
+# Exclusions spécifiques à VS, ces fichiers ne seront pas générés dans le repertoire de destination _site
+exclude: 
+ - LICENSE.txt
+ - TODO.md
+ - README.md
+ - "node_modules"
+ - deploy2prod.sftp
+ - package.json
+ - bs-config.json
+ - "*.bat"
+
+# Par commodité, nous stockons les sources des pages dans le repertoire '_page'
+# A noter que la page index.md doit elle rester à la racine du site   
+include: 
+ - _pages
+ - .htaccess
+
+
+# transpiler saas
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# extension et plugins utilisés
+gems: 
+ - "emoji_for_jekyll"
+
+#plugins:
+#- jekyll-localization

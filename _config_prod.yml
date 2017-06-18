@@ -1,0 +1,9 @@
+# (c) mike.maggire 2017
+# Créé à partir de maggire jekyll fast-start template
+
+# Configuration des variables pour génerer le site dans une version prête à être déployée un serveur de test
+JEKYLL_ENV: production
+strict_front_matter: true
+destination: _site_ready2deploy
+url: http://wiki.maggire.net/blogging-studio-jekyll
+baseurl: /blogging-studio-jekyll

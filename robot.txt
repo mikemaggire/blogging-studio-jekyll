@@ -1,0 +1,4 @@
+# les images qui se trouvent dans le sous-repertoire noindex ne sont pas à indexer
+
+User-agent: *
+Disallow: /assets/ 

@@ -1,0 +1,30 @@
+{
+    "//": "scripts js à lancer avec la commande 'npm run ...' ou via le 'task runner' de VScode pour automatiser les build et les deploiements",
+
+    "name": "automation",
+    "version": "0.2.0",
+    "authors": "mike.maggire",
+    "scripts": {
+        "clean:jekyll": "jekyll clean",
+        "prelivebuild:jekyll": "jekyll clean && md _site",
+        "livebuild:jekyll": "jekyll build --watch --incremental",
+        "liveserve": "lite-server",
+        "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
+
+        "clean:deploy": "rimraf _site_ready2deploy",
+        "prebuild": "npm run clean:deploy",
+        "build" : "jekyll build",
+        "build:test" : "npm run build -- --config _config.yml,_config_test.yml",
+        "build:prod" : "npm run build -- --config _config.yml,_config_prod.yml",
+
+        "predeploy:test": "npm run build:test",
+        "deploy:test": ".\\deploy2test.bat",
+        "postdeploy:test": "opn http://bigmama/web_acceptance/blogging-studio-jekyll",
+
+        "predeploy:prod": "npm run build:prod",
+        "deploy:prod": ".\\deploy2prod.bat",
+        "postdeploy:prod": "opn http://wiki.maggire.net/blogging-studio-jekyll",
+
+        "clean" : "npm run clean:jekyll && npm run clean:deploy"
+  }
+}
