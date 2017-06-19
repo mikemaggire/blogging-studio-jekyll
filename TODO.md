@@ -4,8 +4,8 @@ TODO:
 
 ## fonctionnalités
 
+- [x] gestion des erreurs de pages 404
 - [ ] migrer theme CSS vers SASS avec prise en compte du style block code (ext rouge)
-- [ ] 404
 - [ ] SEO
 - [ ] analytics
 - [ ] pré-traitement des fichiers image
@@ -17,6 +17,7 @@ TODO:
 - [ ] vérifier orthographe et grammaire. /!\ ds VSCODE la seule extention existante sur la marketplace ['Code Spellchecker'](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ne controle que l'Anglais.
 - [ ] générer les entetes yaml
 - [ ] checker https://jekyllrb.com/docs/variables/
+- [ ] customiser markdowlint
 
 ## fix
 

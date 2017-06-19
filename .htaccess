@@ -1,6 +1,9 @@
+---
+---
 SetEnv REGISTER_GLOBALS 0
 
 Options All -Indexes
+ErrorDocument 404 {{ site.baseurl }}/404.html
 
 <files .htaccess>
 Order allow,deny
