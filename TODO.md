@@ -23,7 +23,7 @@ TODO:
 
 - [ ] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
 - [ ] convertir tous les link et permalink en minuscules
-- [ ] double header sur les articles de blog
+- [x] double header sur les articles de blog
 
 ## CI / Deploiement
 
