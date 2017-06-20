@@ -7,3 +7,8 @@ strict_front_matter: true
 destination: _site_ready2deploy
 url: http://wiki.maggire.net/blogging-studio-jekyll
 baseurl: /blogging-studio-jekyll
+
+include:
+ - _pages
+ - .htaccess
+ - openurl.bat

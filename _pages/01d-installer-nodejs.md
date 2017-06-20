@@ -13,7 +13,7 @@ J'ai donc opté pour une solution bien plus efficace et qui pour moi a fonctionn
 
 > _:exclamation: nodejs est un serveur recommandé pour ceux qui développent des applications web avec Visual Studio Code._
 
-Nous allons donc installer : 
+Nous allons donc installer :  
 1. **nodejs** pour windows
 2. **lite-server** pour synchroniser le rendu en live de notre site
 3. **des utilitaires** écrits en javascript et que nous allons utiliser via `nodjs`
@@ -69,14 +69,14 @@ lite-server est donc fonctionnel. Mais allons legerement plus loin et sans refer
 
 L'avantage d'avoir installé `nodjs` sur notre environnement c'est que nous pouvons aussi utiliser des utilitaires écrits en `javascript` qui fonctionnent sous nodejs.
 
-**rimraf** (supression récursive de repertoires), **parallelshell** (execution parallèle de taches), **cpx** (copie de fichiers) et **opn-cli** (lancement d'un navigateur internet) en sont quelque uns qui vons nous servir dans les taches d'automatisation et de deploiement.
+**rimraf** (supression récursive de repertoires), **parallelshell** (execution parallèle de taches), **copyfiles** (copie de fichiers) et **opn-cli** (lancement d'un navigateur internet) en sont quelque uns qui vons nous servir dans les taches d'automatisation et de deploiement.
 
 Installez les avec les commandes suivantes :
 
 ``` shell
 > npm install --global rimraf
 > npm install --global parallelshell
-> npm install --global cpx
+> npm install --global copyfiles
 > npm install --global opn-cli
 ```
 
@@ -107,6 +107,6 @@ Pour la prochaine étape cela dépend si vous avez déja `visual studio code` su
 - [A Fast and Convenient Development Server with lite-server](https://scotch.io/bar-talk/a-fast-and-convenient-development-server-with-lite-server)
 - [Visual Studio Code and local web server](https://weblogs.asp.net/lduveau/visual-studio-code-and-local-web-server)
 - [rimraf](https://www.npmjs.com/package/rimraf) : l'utilitaire nodejs de suppression de repertoires
-- [cpx](https://github.com/mysticatea/cpx) : l'utilitaire nodejs de copie de repertoires et fichiers
+- [copyfiles](https://www.npmjs.com/package/copyfiles) : l'utilitaire nodejs de copie de repertoires et fichiers
 - [opn-cli](https://github.com/sindresorhus/opn-cli) : l'utilitaire nodejs qui permet d'ouvrir un explorateur
 - [Lite-server](https://www.npmjs.com/package/lite-server) : le serveur de synchronisation du rendu des pages

@@ -6,7 +6,7 @@ permalink: /guide-creation-site-jekyll3-visualstudio-code.html
 ---
 # Guide de création d'un nouveau site ou blog
 
-Dans ce guide vous allez voir comment : 
+Dans ce guide vous allez voir comment :
 
 - clonner un site type, et le tester en local
 - personnaliser le style de votre site

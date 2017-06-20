@@ -7,3 +7,8 @@ strict_front_matter: true
 destination: _site_ready2deploy
 url: http://bigmama/web_acceptance/blogging-studio-jekyll
 baseurl: /web_acceptance/blogging-studio-jekyll
+
+include:
+ - _pages
+ - .htaccess
+ - openurl.bat

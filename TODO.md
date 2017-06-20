@@ -21,16 +21,17 @@ TODO:
 
 ## fix
 
-- [ ] blancs ajoutés dans html par jekyll
+- [ ] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
 - [ ] convertir tous les link et permalink en minuscules
 - [ ] double header sur les articles de blog
 
-## CI
+## CI / Deploiement
 
+- [x] process publication : lan, sftp
+- [x] publications 'propres' : vider les repertoires de destination avant de republier, forcer le transfert de .htaccess
+- [x] ouvrir explorateur après deploiement avec URL du site publié selon la destination
 - [ ] créer des taches de test : vérification des liens URL, des images etc (idéalement extension ruby HTMLproofer mais ne fonctionne pas, voir aussi une extension qui controle les liens en live, comme MDlint qui vérifie la syntaxe markdown en cours de frappe.)
 - [ ] incrément automatique des versions
-- [ ] publication : vider les repertoires de destination avant de republier
-- [ ] process publication sftp : droits https://github.com/mkloubert/vs-deploy/wiki/target_sftp#modes-for-specific-files
 
 ## explications / documentation
 

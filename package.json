@@ -8,7 +8,7 @@
         "clean:jekyll": "jekyll clean",
         "prelivebuild:jekyll": "jekyll clean && md _site",
         "livebuild:jekyll": "jekyll build --watch --incremental",
-        "liveserve": "lite-server",
+        "liveserve": "lite-server -c _studiojekyll/bs-config.json",
         "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
 
         "clean:deploy": "rimraf _site_ready2deploy",
@@ -18,13 +18,13 @@
         "build:prod" : "npm run build -- --config _config.yml,_config_prod.yml",
 
         "predeploy:test": "npm run build:test",
-        "deploy:test": ".\\deploy2test.bat",
-        "postdeploy:test": "opn http://bigmama/web_acceptance/blogging-studio-jekyll",
+        "deploy:test": ".\\_deploy\\deploy2test.bat",
+        "postdeploy:test": ".\\_site_ready2deploy\\openurl.bat",
 
         "predeploy:prod": "npm run build:prod",
-        "deploy:prod": ".\\deploy2prod.bat",
-        "postdeploy:prod": "opn http://wiki.maggire.net/blogging-studio-jekyll",
+        "deploy:prod": ".\\_deploy\\deploy2prod.bat",
+        "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat",
 
         "clean" : "npm run clean:jekyll && npm run clean:deploy"
   }
-}
+} 

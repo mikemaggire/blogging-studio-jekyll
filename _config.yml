@@ -6,9 +6,6 @@ title: Blogging Studio Jekyll
 tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
 description: Guides pour creer rapidement des sites web performants et funs avec Jekyll et Visual Studio.
 
-url: http://wiki.maggire.com/blogging-studio-jekyll
-baseurl: ''
-
 # About / Contact
 # Seul le nom est obligatoire
 author:
@@ -19,7 +16,7 @@ author:
   github_username:  mike.maggire
 
 # Le numéro de version du site, à incrémenter au moment des publications
-version: 0.1.0
+version: 0.1.1
 
 ########################
 # Les variables suivantes ne sont pas à modifier sauf exception
@@ -43,13 +40,13 @@ exclude:
  - package.json
  - bs-config.json
  - "*.bat"
+ - _deploy
 
 # Par commodité, nous stockons les sources des pages dans le repertoire '_page'
 # A noter que la page index.md doit elle rester à la racine du site   
 include: 
  - _pages
  - .htaccess
-
 
 # transpiler saas
 sass:
