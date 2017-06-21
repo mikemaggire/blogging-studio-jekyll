@@ -5,11 +5,11 @@ TODO:
 ## fonctionnalités
 
 - [x] gestion des erreurs de pages 404
+- [x] sitemap
 - [ ] migrer theme CSS vers SASS
 - [ ] SEO
 - [ ] analytics
 - [ ] pré-traitement des fichiers image
-- [ ] sitemap (voir dans doc jekyll)
 - [ ] angular ?
 - [ ] logo StudioJekyll
 - [ ] boutons sociaux
@@ -22,9 +22,10 @@ TODO:
 ## fix
 
 - [x] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
-- [ ] convertir tous les link et permalink en minuscules
 - [x] double header sur les articles de blog
 - [x] code blocks mal rendus
+- [ ] convertir tous les link et permalink en minuscules
+- [ ] robots.txt et non robot.txt
 
 ## CI / Deploiement
 
@@ -33,6 +34,7 @@ TODO:
 - [x] ouvrir explorateur après deploiement avec URL du site publié selon la destination
 - [ ] créer des taches de test : vérification des liens URL, des images etc (idéalement extension ruby HTMLproofer mais ne fonctionne pas, voir aussi une extension qui controle les liens en live, comme MDlint qui vérifie la syntaxe markdown en cours de frappe.)
 - [ ] incrément automatique des versions
+- [ ] automatiser gitcommit et gitpush avec le deploiement en production
 
 ## explications / documentation
 

@@ -56,6 +56,7 @@ Lancez successivement les commandes suivantes pour les installer :
 > gem install tzinfo
 > gem install tzinfo-data
 > gem install rouge
+> gem install jekyll-sitemap
 ```
 
 Yes, Jekyll est opérationnel sur votre PC ! :+1:
