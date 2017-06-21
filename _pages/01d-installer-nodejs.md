@@ -44,9 +44,8 @@ Le serveur `Lite-server` s'appuye lui même sur le serveur `browsersync` qui off
 
 Pour installer `lite-server` lancez la commande suivante :
 
-``` shell
+```shell
 npm install --global lite-server
-
 ```
 
 Nous verrons plus tard comment l'utiliser en phase de rédaction de nos pages et articles.
@@ -73,7 +72,7 @@ L'avantage d'avoir installé `nodjs` sur notre environnement c'est que nous pouv
 
 Installez les avec les commandes suivantes :
 
-``` shell
+```shell
 > npm install --global rimraf
 > npm install --global parallelshell
 > npm install --global copyfiles

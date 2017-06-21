@@ -5,7 +5,7 @@ TODO:
 ## fonctionnalités
 
 - [x] gestion des erreurs de pages 404
-- [ ] migrer theme CSS vers SASS avec prise en compte du style block code (ext rouge)
+- [ ] migrer theme CSS vers SASS
 - [ ] SEO
 - [ ] analytics
 - [ ] pré-traitement des fichiers image
@@ -21,9 +21,10 @@ TODO:
 
 ## fix
 
-- [ ] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
+- [x] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
 - [ ] convertir tous les link et permalink en minuscules
 - [x] double header sur les articles de blog
+- [x] code blocks mal rendus
 
 ## CI / Deploiement
 

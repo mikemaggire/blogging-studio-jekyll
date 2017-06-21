@@ -25,7 +25,7 @@ Le langage de programmation `Ruby` offre de nombreuses extensions et un utilitai
 
 Le logiciel Jekyll est un package de Ruby qu'il est necessaire d'installer avec la commande suivante :
 
-``` shell
+```shell
 > gem install jekyll bundler
 ```
 
@@ -50,13 +50,12 @@ Il existe plusieurs extensions Jekyll qui permettent d'enrichir ses capacités. 
 
 Lancez successivement les commandes suivantes pour les installer :
 
-``` shell
+```shell
 > gem install jekyll-feed
 > gem install emoji_for_jekyll
 > gem install tzinfo
 > gem install tzinfo-data
 > gem install rouge
-
 ```
 
 Yes, Jekyll est opérationnel sur votre PC ! :+1:

@@ -5,16 +5,18 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <title>
-    {% if page.title == "Accueil" %}
+    {%- if page.title == "Accueil" -%}
       {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
+    {%- else -%}
       {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {%- endif -%}
   </title>
 
   <!-- CSS -->
+  <!-- link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/lanyon.css">

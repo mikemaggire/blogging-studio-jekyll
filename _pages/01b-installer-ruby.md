@@ -49,11 +49,10 @@ Une fois téléchargé, vous devez lancer l'executable qui propose une décompre
 
 Ensuite il faut ouvrir un fenêtre de commandes dans ce repertoire et lancer successivement trois commandes d'initialisation :
 
-``` shell
+```shell
 > devkitvars.bat
 > ruby dk.rb init
 > ruby dk.rb install
-
 ```
 
 ![init-devkit-ruby.png]({{ site.baseurl }}/assets/init-devkit-ruby.png)

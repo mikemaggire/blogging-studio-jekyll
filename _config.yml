@@ -28,7 +28,7 @@ encoding: utf-8
 lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
-highlighter: rouge
+markdown: kramdown
 
 # Exclusions spécifiques à VS, ces fichiers ne seront pas générés dans le repertoire de destination _site
 exclude: 
@@ -36,7 +36,6 @@ exclude:
  - TODO.md
  - README.md
  - "node_modules"
- - deploy2prod.sftp
  - package.json
  - bs-config.json
  - "*.bat"
@@ -49,13 +48,21 @@ include:
  - .htaccess
 
 # transpiler saas
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+#sass:
+#  sass_dir:          _sass
+#  style:            :compressed
 
 # extension et plugins utilisés
-gems: 
+plugins: 
+ - "jekyll-feed"
  - "emoji_for_jekyll"
-
-#plugins:
 #- jekyll-localization
+
+#kramdown:
+#  auto_ids:       true
+#  entity_output:  as_char
+#  toc_levels:     1..6
+#  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+#  input:          GFM
+#  hard_wrap:      false
+#  footnote_nr:    1

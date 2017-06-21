@@ -49,7 +49,7 @@ Nous allons maintenant configurer la combinaison `CTRL + SHIFT + R` pour lancer 
 
 Pour cela vous devez aller dans le menu `/Fichier/Préférences/Raccourcis clavier` puis tout en haut de la liste des raccourcis vous avez un lien qui permet d'ouvir le fichier de personnalisation `keybindings.json`. Cliquez dessus et modifiez le comme suit :
 
-``` json
+```settings
 // Place your key bindings in this file to overwrite the defaults
 [
     {
@@ -58,7 +58,6 @@ Pour cela vous devez aller dans le menu `/Fichier/Préférences/Raccourcis clavi
         "args": "liverender"
     }
 ]
-
 ```
 
 Puis sauvegardez. C'est tout. Nous le testerons avec notre 1er site dans les prochaines étapes.
