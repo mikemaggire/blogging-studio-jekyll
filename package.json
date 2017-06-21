@@ -5,17 +5,18 @@
     "version": "0.2.0",
     "authors": "mike.maggire",
     "scripts": {
-        "clean:jekyll": "jekyll clean",
+        "clean:jekyll": "jekyll clean && rimraf _site_ready2deploy",
+        "build": "jekyll clean && jekyll build",
+        
         "prelivebuild:jekyll": "jekyll clean && md _site",
         "livebuild:jekyll": "jekyll build --watch --incremental",
         "liveserve": "lite-server -c _studiojekyll/bs-config.json",
         "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
 
-        "clean:deploy": "rimraf _site_ready2deploy",
-        "prebuild": "npm run clean:deploy",
-        "build" : "jekyll build",
-        "build:test" : "npm run build -- --config _config.yml,_config_test.yml",
-        "build:prod" : "npm run build -- --config _config.yml,_config_prod.yml",
+        "prebuild:deploy": "jekyll clean && md _site && rimraf _site_ready2deploy && md _site_ready2deploy",
+        "build:deploy" : "jekyll build",
+        "build:test" : "npm run build:deploy -- --config _config.yml,_config_test.yml",
+        "build:prod" : "npm run build:deploy -- --config _config.yml,_config_prod.yml",
 
         "predeploy:test": "npm run build:test",
         "deploy:test": ".\\_deploy\\deploy2test.bat",
@@ -23,8 +24,6 @@
 
         "predeploy:prod": "npm run build:prod",
         "deploy:prod": ".\\_deploy\\deploy2prod.bat",
-        "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat",
-
-        "clean" : "npm run clean:jekyll && npm run clean:deploy"
+        "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat"
   }
 } 

@@ -3,7 +3,7 @@
     "tasks": [
         {
             "taskName": "build_jekyll_once",
-            "command": "jekyll build",
+            "command": "npm run build",
             "isShellCommand": true,
             "isBuildCommand": true,
             "showOutput": "always"
