@@ -16,7 +16,7 @@ author:
   github_username:  mike.maggire
 
 # Le numéro de version du site, à incrémenter au moment des publications
-version: 0.1.1
+version: 0.1.2
 
 ########################
 # Les variables suivantes ne sont pas à modifier sauf exception
@@ -47,17 +47,11 @@ include:
  - _pages
  - .htaccess
 
-# transpiler saas
-#sass:
-#  sass_dir:          _sass
-#  style:            :compressed
-
 # extension et plugins utilisés
 plugins: 
  - "jekyll-feed"
  - "emoji_for_jekyll"
  - "jekyll-sitemap"
-#- jekyll-localization
 
 #kramdown:
 #  auto_ids:       true

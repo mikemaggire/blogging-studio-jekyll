@@ -12,3 +12,8 @@ include:
  - _pages
  - .htaccess
  - openurl.bat
+
+# transpiler saas
+sass:
+  sass_dir:          _sass
+  style:            :compressed

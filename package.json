@@ -6,11 +6,11 @@
     "authors": "mike.maggire",
     "scripts": {
         "clean:jekyll": "jekyll clean && rimraf _site_ready2deploy",
-        "build": "jekyll clean && jekyll build",
+        "build": "bundle exec jekyll build",
         
-        "prelivebuild:jekyll": "jekyll clean && md _site",
+        "prelivebuild:jekyll": "jekyll clean && md _site && ping -n 3 127.0.0.1 > nul",
         "livebuild:jekyll": "jekyll build --watch --incremental",
-        "liveserve": "lite-server -c _studiojekyll/bs-config.json",
+        "liveserve": "ping -n 6 127.0.0.1 > nul && lite-server -c _studiojekyll/bs-config.json",
         "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
 
         "prebuild:deploy": "jekyll clean && md _site && rimraf _site_ready2deploy && md _site_ready2deploy",

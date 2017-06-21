@@ -24,8 +24,8 @@ TODO:
 - [x] blancs ajoutés dans html par jekyll. Voir https://shopify.github.io/liquid/basics/whitespace/ 
 - [x] double header sur les articles de blog
 - [x] code blocks mal rendus
+- [x] robots.txt et non robot.txt
 - [ ] convertir tous les link et permalink en minuscules
-- [ ] robots.txt et non robot.txt
 
 ## CI / Deploiement
 
