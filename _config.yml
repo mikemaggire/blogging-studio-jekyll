@@ -2,7 +2,7 @@
 # Créé à partir de maggire jekyll fast-start template
 
 # Configuration initiale
-title: Blogging Studio Jekyll
+title: Blogging StudioJekyll
 tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
 description: Guides pour creer rapidement des sites web performants et funs avec Jekyll et Visual Studio.
 
@@ -19,7 +19,7 @@ author:
 version: 0.1.2
 
 ########################
-# Les variables suivantes ne sont pas à modifier sauf exception
+# Les variables suivantes ne sont pas à modifier
 ########################
 
 # encoding & format
@@ -30,28 +30,36 @@ date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
 
-# Exclusions spécifiques à VS, ces fichiers ne seront pas générés dans le repertoire de destination _site
+# Extension utilisées
+plugins: 
+ - jekyll-feed
+ - emoji_for_jekyll
+ - jekyll-sitemap
+
+# Exclusions spécifiques à VS
+# Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
 exclude: 
  - LICENSE.txt
  - TODO.md
  - README.md
- - "node_modules"
  - package.json
  - bs-config.json
- - "*.bat"
- - _deploy
+ - deploy2prod.bat
+ - deploy2test.bat
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/
 
-# Par commodité, nous stockons les sources des pages dans le repertoire '_page'
+# Par commodité, nous stockons les sources des pages dans le repertoire '_pages'
+# Nous forcons le traitement de .htaccess
 # A noter que la page index.md doit elle rester à la racine du site   
 include: 
  - _pages
  - .htaccess
-
-# extension et plugins utilisés
-plugins: 
- - "jekyll-feed"
- - "emoji_for_jekyll"
- - "jekyll-sitemap"
 
 #kramdown:
 #  auto_ids:       true

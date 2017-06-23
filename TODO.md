@@ -7,6 +7,8 @@ TODO:
 - [x] gestion des erreurs de pages 404
 - [x] sitemap
 - [ ] migrer theme CSS vers SASS
+- [ ] Disqus
+- [ ] gestion des tags
 - [ ] SEO
 - [ ] analytics
 - [ ] pré-traitement des fichiers image
@@ -35,7 +37,3 @@ TODO:
 - [ ] créer des taches de test : vérification des liens URL, des images etc (idéalement extension ruby HTMLproofer mais ne fonctionne pas, voir aussi une extension qui controle les liens en live, comme MDlint qui vérifie la syntaxe markdown en cours de frappe.)
 - [ ] incrément automatique des versions
 - [ ] automatiser gitcommit et gitpush avec le deploiement en production
-
-## explications / documentation
-
-- [ ] compilateur SAAS inclus avec Jekyll3

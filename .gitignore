@@ -1,10 +1,13 @@
 # exclude the jekyll temporary destination site generated from GIT : not commit, no push, no pull...
+#
 _site
 _site_ready2deploy
-_deploy
 .jekyll-metadata
-
-# exclude 
-settings.json
+.sass-cache
 node_modules/
-deploy2*.*
+
+# exclude deployement batches
+#
+_studiojekyll/deploy2*.*
+
+
