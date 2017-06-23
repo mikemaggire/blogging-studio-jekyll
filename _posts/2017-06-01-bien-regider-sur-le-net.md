@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bien rédiger sur le net
-tags: redaction
+tags: rediger
 ---
 # Bien rédiger sur le net
 
