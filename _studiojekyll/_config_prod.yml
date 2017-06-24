@@ -13,7 +13,6 @@ baseurl: /blogging-studio-jekyll
 ########################
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée un serveur de test
-JEKYLL_ENV: production
 strict_front_matter: true
 destination: _site_ready2deploy
 

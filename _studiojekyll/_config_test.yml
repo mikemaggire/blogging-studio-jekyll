@@ -5,15 +5,14 @@
 # URL absolue et relative de votre site sur le machine de **TEST**
 # Vous devez configurer ces valeurs
 ########################
-url: http://bigmama/web_acceptance/blogging-studio-jekyll
-baseurl: /web_acceptance/blogging-studio-jekyll
+url: http://nestor/acceptance/blogging-studio-jekyll
+baseurl: /acceptance/blogging-studio-jekyll
 
 ########################
 # Les variables suivantes ne sont pas à modifier
 ########################
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée un serveur de TEST
-JEKYLL_ENV: test
 strict_front_matter: true
 destination: _site_ready2deploy
 

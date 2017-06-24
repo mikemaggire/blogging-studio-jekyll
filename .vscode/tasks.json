@@ -14,6 +14,16 @@
             "isShellCommand": true,
             "isBackground": true,
             "showOutput": "always"
+        },
+        {
+            "customize": "vscode.npm.run deploy:test",
+            "taskName": "npm : run deploy:test",
+            "problemMatcher": []
+        },
+        {
+            "customize": "vscode.npm.run build:prod",
+            "taskName": "npm : run build:prod",
+            "problemMatcher": []
         }
     ]
 }

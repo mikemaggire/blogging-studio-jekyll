@@ -2,24 +2,30 @@
 
 TODO:
 
-## fonctionnalités
+## Fonctionnalités
 
 - [x] gestion des erreurs de pages 404
 - [x] sitemap
-- [ ] migrer theme CSS vers SASS
-- [ ] Disqus
+- [x] Disqus
 - [ ] gestion des tags
 - [ ] SEO
 - [ ] analytics
 - [ ] pré-traitement des fichiers image
-- [ ] angular ?
-- [ ] logo StudioJekyll
 - [ ] boutons sociaux
 - [ ] multilingues https://www.sylvaindurand.fr/rendre-jekyll-multilingue/
 - [ ] vérifier orthographe et grammaire. /!\ ds VSCODE la seule extention existante sur la marketplace ['Code Spellchecker'](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ne controle que l'Anglais.
+
+# Rédactions
 - [ ] générer les entetes yaml
 - [ ] checker https://jekyllrb.com/docs/variables/
 - [ ] customiser markdowlint
+
+## design
+
+- [ ] migrer theme CSS vers SASS
+- [x] ombres autour des images
+- [ ] logo StudioJekyll
+- [ ] angular ?
 
 ## fix
 
@@ -27,7 +33,9 @@ TODO:
 - [x] double header sur les articles de blog
 - [x] code blocks mal rendus
 - [x] robots.txt et non robot.txt
+- [x] gestion des environnements
 - [ ] convertir tous les link et permalink en minuscules
+- [ ] title incorrect sur page blog.html
 
 ## CI / Deploiement
 
