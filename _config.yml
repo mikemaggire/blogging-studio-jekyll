@@ -6,7 +6,7 @@ title: Blogging StudioJekyll
 tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
 description: Guides pour creer rapidement des sites web performants et funs avec Jekyll et Visual Studio.
 
-# About / Contact
+# References de l'auteur
 # Seul le nom est obligatoire
 author:
   name: Mike Maggire
@@ -17,6 +17,12 @@ author:
 
 # Le numéro de version du site, à incrémenter au moment des publications
 version: 0.1.2
+
+# Pour activer la gestion des commentaires à la fin des articles 
+# Vous devez renseigner votre id disqus (voir https://disqus.com/)
+# Sinon mettez ces deux lignes en commentaire
+disqus:
+  shortname: blogging-studio-jekyll
 
 ########################
 # Les variables suivantes ne sont pas à modifier
