@@ -227,11 +227,17 @@ blockquote p:last-child {
   }
 }
 
+/* customized by studiojekyll */
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: auto;
+  border-width: 1px;
+  border-color: #7a7a7a;
+  border-style: solid;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px #7a7a7a;
+
 }
 
 /* Tables */
@@ -434,4 +440,7 @@ a.pagination-item:hover {
   display: inline;
   margin: 0 0;
   border-radius: 0px;
+  border-style: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
