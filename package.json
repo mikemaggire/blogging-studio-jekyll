@@ -9,7 +9,7 @@
         "build": "bundle exec jekyll build -V",
         
         "prelivebuild:jekyll": "jekyll clean && md _site && ping -n 3 127.0.0.1 > nul",
-        "livebuild:jekyll": "jekyll build --watch --incremental",
+        "livebuild:jekyll": "jekyll build --watch --incremental --drafts",
         "liveserve": "ping -n 6 127.0.0.1 > nul && lite-server -c _studiojekyll/bs-config.json",
         "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
 
