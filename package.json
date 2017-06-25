@@ -15,8 +15,8 @@
 
         "prebuild:deploy": "jekyll clean && md _site && rimraf _site_ready2deploy && md _site_ready2deploy",
         "build:deploy" : "jekyll build",
-        "build:test" : "SET JEKYLL_ENV=test && npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_test.yml",
-        "build:prod" : "SET JEKYLL_ENV=production && npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml",
+        "build:test" : "SET JEKYLL_ENV=test&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_test.yml",
+        "build:prod" : "SET JEKYLL_ENV=production&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml",
 
         "predeploy:test": "npm run build:test",
         "deploy:test": ".\\_studiojekyll\\deploy2test.bat",

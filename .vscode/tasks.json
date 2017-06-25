@@ -21,8 +21,8 @@
             "problemMatcher": []
         },
         {
-            "customize": "vscode.npm.run build:prod",
-            "taskName": "npm : run build:prod",
+            "customize": "vscode.npm.run deploy:prod",
+            "taskName": "npm : run deploy:prod",
             "problemMatcher": []
         }
     ]
