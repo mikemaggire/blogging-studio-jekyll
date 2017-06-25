@@ -26,4 +26,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/apple-touch-icon.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
   </head>
