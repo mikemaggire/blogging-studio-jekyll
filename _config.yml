@@ -18,9 +18,11 @@ author:
 # Le numéro de version du site, à incrémenter au moment des publications
 version: 0.1.3
 
-# Pour activer la gestion des commentaires à la fin des articles 
-# Vous devez renseigner votre id disqus (voir https://disqus.com/)
-# Sinon mettez ces deux lignes en commentaire
+# ####### Gestion des commentaires sur les pages #########
+# Pour activer DISQUS à la fin des articles
+# Vous devez renseigner votre identifiant DISQUS en face de 'shortname' (voir https://disqus.com/)
+# Vous plus d'explications lisez notre article : http://wiki.maggire.net/blogging-studio-jekyll/2017/06/25/comment-activer-commentaires.html
+# Pour désactiver DISQUS mettez les deux lignes suivantes en commentaire
 disqus:
   shortname: blogging-studio-jekyll
 
