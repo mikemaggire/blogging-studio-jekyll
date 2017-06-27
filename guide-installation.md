@@ -2,6 +2,7 @@
 layout: page
 title: Guide d'installation de l'environnement de travail Jekyll3 Visual Studio Code
 sidebar: Guide installation
+permalink: /guide-installation-studiojekyll.html
 ---
 # Guide d'installation de l'environnement de travail _Studio Jekyll_
 

@@ -2,7 +2,7 @@
 layout: page
 title: Guide de rédaction et de publication
 sidebar: Guide rédaction & publication
-permalink: /guide-rediger-publier-jekyll3-visualstudio-code.html
+permalink: /guide-rediger-publier-studiojekyll.html
 category: guide
 ---
 # Guide de rédaction et de publication avec _Studio Jekyll_

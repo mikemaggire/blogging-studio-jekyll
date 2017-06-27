@@ -2,6 +2,7 @@
 layout: page
 title: Guide de création et d'initialisation d'un noveau site ou blog
 sidebar: Guide nouveau site
+permalink: /guide-nouveau-site-studiojekyll.html
 ---
 # Guide de création d'un nouveau site ou blog
 
@@ -14,4 +15,4 @@ TODO: _à completer_
 
 ## Pour continuer
 
-Continuez avec le [guide pour rédiger et publier]({{ site.baseurl }}{% link _guide/redaction-publication.md %})
+Continuez avec le [guide pour rédiger et publier]({{ site.baseurl }}{% link guide-redaction-publication.md %})
