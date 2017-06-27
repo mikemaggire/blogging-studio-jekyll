@@ -1,6 +1,6 @@
 ---
 layout: bloglayout
-title: le-blog-jekyll3-visualstudio-code
+title: blog studiojekyll
 permalink: /blog.html
 sidebar: Blog
 ---
