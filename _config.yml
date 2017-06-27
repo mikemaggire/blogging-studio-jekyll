@@ -56,7 +56,7 @@ permalink: /blog/:categories/:title.html
 # Extension utilisées
 plugins: 
  - jekyll-feed
- - emoji_for_jekyll
+ - jemoji
  - jekyll-sitemap
 
 # Exclusions spécifiques à VS
