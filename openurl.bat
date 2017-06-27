@@ -1,3 +1,3 @@
 ---
 ---
-opn "{{ site.url }}/index.html" --ext=html
+opn "{{ site.url }}{{ site.baseurl }}/index.html" --ext=html

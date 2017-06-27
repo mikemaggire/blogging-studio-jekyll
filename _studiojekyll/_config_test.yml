@@ -5,8 +5,8 @@
 # URL absolue et relative de votre site sur le machine de **TEST**
 # Vous devez configurer ces valeurs
 ########################
-url: http://nestor/acceptance/blogging-studio-jekyll
-baseurl: /acceptance/blogging-studio-jekyll
+url: http://nestor
+baseurl: '/acceptance/blogging-studio-jekyll'
 
 ########################
 # Les variables suivantes ne sont pas à modifier

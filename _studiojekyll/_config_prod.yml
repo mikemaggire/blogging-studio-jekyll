@@ -5,7 +5,7 @@
 # URL absolue et relative de votre site sur le machine de **PRODUCTION**
 # Vous devez configurer ces valeurs
 ########################
-url: http://wiki.maggire.net/blogging-studio-jekyll
+url: http://wiki.maggire.net
 baseurl: /blogging-studio-jekyll
 
 ########################
