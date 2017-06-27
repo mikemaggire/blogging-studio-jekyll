@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comment activer les commentaires sur votre site StudioJekyll
-tags: guide studiojekyll commentaires disqus
+tags: guide
 ---
 # Comment activer les commentaires sur un site _StudioJekyll_
 

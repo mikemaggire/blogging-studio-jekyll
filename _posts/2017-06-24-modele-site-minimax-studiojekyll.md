@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Minimax, le modèle de site pret à l'emploi avec StudioJekyll
-tags: jekyll3 minimax
+tags: Jekyll3 MiniMax
 ---
-# Le modèle de site _Minimax_
+# Le modèle de site _MiniMax_
 
 Pour démarrer rapidement à rédiger du contenu avec `StudioJekyll` nous vous proposons d'utiliser le `modèle Minimax`. Ses caractéristiques sont détaillées dans cet article.
 

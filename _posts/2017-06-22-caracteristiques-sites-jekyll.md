@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Caractéristiques d'un site Jekyll
-tags: jekyll
+tags: Jekyll3
 ---
 # Caractéristiques d'un site _Jekyll_
 
