@@ -1,7 +1,6 @@
 ---
 layout: page 
 title : Installer nodejs sur windows
-permalink: /installer-nodejs-lite-server-windows.html
 ---
 # Installer _nodejs_ et _lite-server_ sur windows
 
@@ -21,8 +20,8 @@ Nous allons donc installer :
 ---
 
 > _Prérequis avant de continuer_  
-> [:white_check_mark: installer ruby sur windows]({{ site.baseurl }}/installer-ruby-windows.html)  
-> [:white_check_mark: installer jekyll sur windows]({{ site.baseurl }}/installer-jekyll3-windows.html)
+> [:white_check_mark: installer ruby sur windows]({{ site.baseurl }}{% link _guide/installer-ruby.md %})  
+> [:white_check_mark: installer jekyll sur windows]({{ site.baseurl }}{% link _guide/installer-jekyll.md %})
 
 ---
 
@@ -88,8 +87,8 @@ Puis lancer la commande `> npm config set loglevel  'error'` pour éviter de voi
 ## On avance ! Prochaines étapes
 
 Récapitulons :  
-:white_check_mark: [ruby et ses plugins sont installés]({{ site.baseurl }}/installer-ruby-windows.html)  
-:white_check_mark: [jekyll et ses plugins sont installés]({{ site.baseurl }}/installer-jekyll3-windows.html)  
+:white_check_mark: [ruby et ses plugins sont installés]({{ site.baseurl }}{% link _guide/installer-ruby.md %})  
+:white_check_mark: [jekyll et ses plugins sont installés]({{ site.baseurl }}{% link _guide/installer-jekyll.md %})  
 :white_check_mark: nodejs, lite-server et les utilitaires node sont installés
 
 Bravo :+1:
@@ -97,7 +96,7 @@ Bravo :+1:
 Pour la prochaine étape cela dépend si vous avez déja `visual studio code` sur votre machine. Il nous faut au moins la version 1.13.
 
 | [:white_large_square: installer visual studio code :fast_forward:](https://code.visualstudio.com/) |
-| [:white_large_square: preparer visual studio code :fast_forward:]({{ site.baseurl }}/preparer-visualstudio-code-pour-jekyll3.html) |
+| [:white_large_square: preparer visual studio code :fast_forward:]({{ site.baseurl }}{% link _guide/preparer-vs.md %}) |
 
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Guide d'installation de l'environnement de travail Jekyll3 Visual Studio Code
-permalink: /guide-installation-jekyll3-visualstudio-code.html
 sidebar: Guide installation
 ---
 # Guide d'installation de l'environnement de travail _Studio Jekyll_
@@ -27,16 +26,16 @@ _**NOTE :** Nous travaillons sous **Windows 10**._
 
 ## Etapes d'installation
 
-1. [installer Ruby]({{ site.baseurl }}/installer-ruby-windows.html) qui est utilisé par Jekyll (voir notes ci-après).
-1. [installer Jekyll]({{ site.baseurl }}/installer-jekyll3-windows.html) lui même, et quelques plugins dont nous avons besoin,
-1. [installer nodejs]({{ site.baseurl }}/installer-nodejs-lite-server-windows.html), lite-server, et quelques plugins nodejs.
+1. [installer Ruby]({{ site.baseurl }}{% link _guide/installer-ruby.md %}) qui est utilisé par Jekyll (voir notes ci-après).
+1. [installer Jekyll]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) lui même, et quelques plugins dont nous avons besoin,
+1. [installer nodejs]({{ site.baseurl }}{% link _guide/installer-nodejs.md %}), lite-server, et quelques plugins nodejs.
 
 Dans cet ordre, c'est important !
 
 Puis :
 
 1. [installer visual studio code](https://code.visualstudio.com/) si ce n'est pas déja fait,
-1. [préparer visual studio code]({{ site.baseurl }}/preparer-visualstudio-code-pour-jekyll3.html) en installant des extensions et quelques utilitaires.
+1. [préparer visual studio code]({{ site.baseurl }}{% link _guide/preparer-vs.md %}) en installant des extensions et quelques utilitaires.
 
 **NOTE :** _Nous utiliserons les outils windows autant que faire ce peut, et quand nous utilisons la ligne de commmande nous détaillons les étapes façon 'pour les nulls'._
 
@@ -56,4 +55,4 @@ Puis :
 
 ## C'est parti !
 
-| [:white_large_square: installer Ruby :fast_forward:]({{ site.baseurl }}/installer-ruby-windows.html)
+| [:white_large_square: installer Ruby :fast_forward:]({{ site.baseurl }}{% link _guide/installer-ruby.md %})

@@ -1,7 +1,6 @@
 ---
 layout: page 
 title : Préparer VisualStudio Code pour blogger avec Jekyll 3
-permalink: /preparer-visualstudio-code-pour-jekyll3.html
 ---
 # Préparer VisualStudio Code pour blogger avec Jekyll 3
 
@@ -107,7 +106,7 @@ Récapitulons :
 :white_check_mark: visual studio a été configuré  
 :white_check_mark: vous avez accès aux repositories de GITHUB et vous allez donc pouvoir cloner un site de référence pour créer votre 1er site
 
-Vous pouvez continuer avec le [Guide de création d'un nouveau site]({{ site.baseurl }}/guide-creation-site-jekyll3-visualstudio-code.html).
+Vous pouvez continuer avec le [Guide de création d'un nouveau site]({{ site.baseurl }}{% link _guide/creation-site.md %}).
 
 Let's go !
 

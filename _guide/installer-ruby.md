@@ -1,7 +1,6 @@
 ---
 layout: page  
 title:  Installer Ruby sur Windows 10
-permalink: /installer-ruby-windows.html
 ---
 # Installer Ruby sur Windows 10
 
@@ -77,7 +76,7 @@ Voila, Ruby est opérationnel sur votre PC ! :+1:
 
 ## Prochaine étapes
 
-| [:white_large_square: Installer Jekyll :fast_forward:]({{ site.baseurl }}/installer-jekyll3-windows.html) |
+| [:white_large_square: Installer Jekyll :fast_forward:]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) |
 
 ---
 

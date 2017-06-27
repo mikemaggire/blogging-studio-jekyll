@@ -18,6 +18,12 @@ author:
 # Le numéro de version du site, à incrémenter au moment des publications
 version: 0.1.3
 
+
+collections:
+  guide: 
+    output: true
+    permalink: /:collection/:title.html
+
 ############################################################
 # ####### Gestion des commentaires sur les pages #########
 # Pour activer DISQUS à la fin des articles
@@ -27,8 +33,8 @@ version: 0.1.3
 disqus:
   shortname: blogging-studio-jekyll
 
+############################################################
 # Pour activer Google Analytics sur vos pages
-# Vous devez renseigner votre id disqus (voir https://disqus.com/)
 # Sinon mettez cette ligne en commentaire
 google_analytics: UA-23118933-9
 
@@ -45,7 +51,7 @@ timezone: Europe/Paris
 markdown: kramdown
 
 # Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
+permalink: /blog/:categories/:title.html
 
 # Extension utilisées
 plugins: 
@@ -71,12 +77,9 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
 
-# Par commodité, nous stockons les sources des pages dans le repertoire '_pages'
 # Nous forcons le traitement de .htaccess
-# A noter que la page index.md doit elle rester à la racine du site   
 include: 
- - _pages
- - .htaccess
+  - .htaccess
 
 #kramdown:
 #  auto_ids:       true

@@ -1,7 +1,6 @@
 ---
 layout: page 
-title: Installer Jekyll sur Windows
-permalink: /installer-jekyll3-windows.html
+title: Installer Jekyll3 sur Windows
 ---
 # Installer Jekyll et ses plugins sur Windows
 
@@ -13,7 +12,7 @@ permalink: /installer-jekyll3-windows.html
 ---
 
 > _Prérequis avant de continuer_  
-> [:white_check_mark: installer ruby sur windows]({{ site.baseurl }}/installer-ruby-windows.html)
+> [:white_check_mark: installer ruby sur windows]({{ site.baseurl }}{% link _guide/installer-ruby.md %})
 
 ---
 
@@ -65,7 +64,7 @@ Yes, Jekyll est opérationnel sur votre PC ! :+1:
 
 ## Prochaines étapes
 
-| [:white_large_square: installer nodejs et lite-server :fast_forward:]({{ site.baseurl }}/installer-nodejs-lite-server-windows.html) |
+| [:white_large_square: installer nodejs et lite-server :fast_forward:]({{ site.baseurl }}{% link _guide/installer-nodejs.md %}) |
 
 ---
 

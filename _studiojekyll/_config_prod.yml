@@ -17,7 +17,6 @@ strict_front_matter: true
 destination: _site_ready2deploy
 
 include:
- - _pages
  - .htaccess
  - openurl.bat
 
