@@ -1,10 +1,12 @@
 # Readme blogging with Studio Jekyll
 
-Ce repository contient les sources du site [Bloggez avec Studio Jekyll](http://wiki.maggire.net/blogging-studio-jekyll)
+Ce repository contient les sources du site [Bloggez avec Studio Jekyll sous Windows](http://wiki.maggire.net/blogging-studio-jekyll)
 
 Ce site a été créé avec Jekyll3 et Visual Studio Code sous Windows 10.
 
----------------------------------------
+Voir le [reste à faire et le backlog](todo.md) 
+
+--------------
 
 ## Auteur
 
