@@ -4,11 +4,7 @@ Ce repository contient les sources du site [Bloggez avec Studio Jekyll sous Wind
 
 Ce site a été créé avec Jekyll3 et Visual Studio Code sous Windows 10.
 
-<<<<<<< HEAD
-Voir le [reste à faire et le backlog](TODO.md) 
-=======
-Voir le [reste à faire et le backlog](todo.md) 
->>>>>>> 73dcfb775d7d5d7c8fff5e7e39e8a3626710f343
+Voir le [reste à faire et le backlog](TODO.md)
 
 --------------
 
