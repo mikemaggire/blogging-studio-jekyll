@@ -1,5 +1,7 @@
+#
 # (c) mike.maggire 2017
-# Créé à partir de maggire jekyll fast-start template
+#
+# Pour les règles syntaxiques à respecter dans ce fichier : https://fr.wikipedia.org/wiki/YAML 
 
 # Configuration initiale
 title: Blogging StudioJekyll
@@ -16,7 +18,8 @@ author:
   github_username:  mike.maggire
 
 # Le numéro de version du site, à incrémenter au moment des publications
-version: 0.2.0
+# Nous recommandons de suivre les principes de la gestion sémantique des versions http://semver.org/lang/fr/
+version: 0.2.0 ALPHA
 
 ############################################################
 collections:
