@@ -1,7 +1,7 @@
 {
         "//": "scripts js à lancer avec la commande 'npm run ...' ou via le 'task runner' de VScode pour automatiser les build et les deploiements",
         "name": "automation",
-        "version": "0.2.2",
+        "version": "0.2.3",
         "authors": "mike.maggire",
         "scripts": {
                 "clean:jekyll": "jekyll clean && rimraf _site_ready2deploy",
@@ -10,18 +10,14 @@
                 "livebuild:jekyll": "jekyll build --watch --incremental --drafts",
                 "liveserve": "ping -n 6 127.0.0.1 > nul && lite-server -c _studiojekyll/bs-config.json",
                 "liverender": "parallelshell \"npm run livebuild:jekyll\" \"npm run liveserve\"",
-
                 "prebuild:deploy": "jekyll clean && md _site && rimraf _site_ready2deploy && md _site_ready2deploy",
                 "build:deploy": "jekyll build",
-
                 "prebuild:test": "npm version patch",
                 "build:test": "SET JEKYLL_ENV=test&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_test.yml",
                 "build:prod": "SET JEKYLL_ENV=production&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml",
-
                 "predeploy:test": "npm run build:test",
                 "deploy:test": ".\\_studiojekyll\\deploy2test.bat",
                 "postdeploy:test": ".\\_site_ready2deploy\\openurl.bat",
-                
                 "predeploy:prod": "npm run build:prod",
                 "deploy:prod": ".\\_studiojekyll\\deploy2prod.bat",
                 "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat"
