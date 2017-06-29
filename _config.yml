@@ -19,7 +19,7 @@ author:
 
 # Le numéro de version du site, à incrémenter au moment des publications
 # Nous recommandons de suivre les principes de la gestion sémantique des versions http://semver.org/lang/fr/
-version: 0.2.0 ALPHA
+version: 0.2.0 ALPHA2
 
 ############################################################
 collections:
