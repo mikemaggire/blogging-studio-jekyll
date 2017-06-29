@@ -8,7 +8,7 @@
 - [ ] boutons sociaux, sur site (footer)
 - [ ] boutons sociaux, sur posts
 - [x] gestion des tags
-- [ ] pagination des tags
+- [ ] pagination des tags, et tri, et tags sur pages ?
 - [ ] gestion des catégories, avec pagination
 - [ ] SEO
 - [ ] recherche
