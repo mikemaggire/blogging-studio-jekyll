@@ -21,14 +21,6 @@ author:
   #facebook_id: mikemaggire
   #linkedin_id: mikemaggire
 
-# paramètres spécifique à ce site
-collections:
-  guide: 
-    output: true
-    permalink: /:collection/:title.html
-  pages:
-    output: true
-
 ############################################################ VERSION
 # NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
 # au moment du deploiement en test et en prod
@@ -63,7 +55,7 @@ date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
 
-# Produces a cleaner folder structure when using categories
+# le format type des permalink
 permalink: /blog/:categories/:title.html
 
 # Extension utilisées
@@ -71,6 +63,10 @@ plugins:
  - jekyll-feed
  - jemoji
  - jekyll-sitemap
+
+# Nous forcons le traitement de .htaccess
+include: 
+  - .htaccess
 
 # Exclusions spécifiques à VS
 # Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
@@ -90,10 +86,13 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
 
-# Nous forcons le traitement de .htaccess
-include: 
-  - .htaccess
-#  - _pages
+# Traitement du repertoire _pages
+collections:
+  guide: 
+    output: true
+    permalink: /:collection/:title.html
+  pages:
+    output: true
 
 #kramdown:
 #  auto_ids:       true
