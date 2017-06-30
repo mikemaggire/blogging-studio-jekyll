@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Bien rédiger sur le net
 tags: trucs-et-astuces
+author: Mike Maggire
+title: Bien rédiger sur le net
 ---
-# Bien rédiger sur le net
-
 Et oui, même sur le net on peut écrire le français correctement :
 
 * Dictionnaire Français de référence [lexilogos](http://www.lexilogos.com/francais_langue_dictionnaires.htm).

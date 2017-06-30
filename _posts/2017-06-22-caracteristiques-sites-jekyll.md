@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Caractéristiques d'un site Jekyll
 tags: Jekyll3
+author: Mike Maggire
+title: Caractéristiques d'un site Jekyll
 ---
-# Caractéristiques d'un site _Jekyll_
-
 ## Donc Jekyll, c'est quoi précisement
 
 Jekyll est un **générateur de site statique** simple, et de type blog. Il lui faut un répertoire de modèles contenant des **fichiers de textes bruts et formatés** (la partie rédactionnelle de votre site, son contenu), puis il les traite à travers un **convertisseur** comme `Markdown` et le **générateur de rendu** `Liquid`, et produit un site Web statique complet et **prêt à publier** vers **votre serveur Web** préféré (chez un hebergeur par exemple). Jekyll est également le moteur de GitHub Pages, ce qui signifie que vous pouvez utiliser Jekyll pour héberger la page, le blog ou le site de votre projet à partir des serveurs de GitHub gratuitement.

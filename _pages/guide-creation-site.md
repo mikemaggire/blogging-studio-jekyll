@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Guide de création et d'initialisation d'un noveau site ou blog
 sidebar: Guide nouveau site
 permalink: /guide-nouveau-site-studiojekyll.html
+title: Guide de création et initialisation nouveau site web
 ---
-# Guide de création d'un nouveau site ou blog
-
 Dans ce guide vous allez voir comment :
 
 - clonner un site type, et le tester en local

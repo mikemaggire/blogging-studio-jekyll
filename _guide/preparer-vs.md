@@ -2,8 +2,6 @@
 layout: page 
 title : Préparer VisualStudio Code pour blogger avec Jekyll 3
 ---
-# Préparer VisualStudio Code pour blogger avec Jekyll 3
-
 Pour préparer `Visual Studio Code` nous allons :
 
 1. Installer des extensions à partir de la marketplace Visual Studio,

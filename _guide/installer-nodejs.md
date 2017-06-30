@@ -1,9 +1,7 @@
 ---
 layout: page 
-title : Installer nodejs sur windows
+title : Installer nodejs et lite-server sur windows
 ---
-# Installer _nodejs_ et _lite-server_ sur windows
-
 Pour pouvoir tester le site web ou les nouveaux articles créés directement dans `Visual Studio Code` nous avons besoin qu'un serveur web s'execute en local sur notre PC. Ce serveur va avoir pour mission de servir notre site statique comme s'il était publié sur un serveur distant.
 
 Microsost offre en standard le serveur IIS (Internet Information Server) disponible sur chaque PC avec Windows. Ce serveur, bien qu'il soit partie intégrante du système d'exploitation n'est pas installé automatiquement avec WINDOWS. Mais ce serveur est bien trop complexe à configurer et il n'est pas rare de passer des heures (en tout cas pour ma part) à trouver les bons paramètres ou pour attribuer les autorisations adequates pour que le site web s'affiche correctement.

@@ -1,11 +1,9 @@
 ---
 layout: page
-title: A propos
 permalink: /a-propos.html
 sidebar: A propos
+title: A propos
 ---
-# A Propos de StudioJekyll
-
 Je m'appelle Mike Maggire, je suis français et je travaille dans l'univers informatique depuis quelques années[^1]. Après avoir créé des sites web et des blogs _from scratch_, ou en utilisant des solutions pretes à l'emploi comme _strikingly.com_ ou _weebly.com_, ou encore à partir de CMS comme _Wordpress_, j'ai été confronté à plusieurs problèmes :
 
 - **la sécurité** : malgré les précautions mes sites wordpress ont été piratés, et je ne suis pas le seul !

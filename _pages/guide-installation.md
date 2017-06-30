@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Guide d'installation de l'environnement de travail Jekyll3 Visual Studio Code
 sidebar: Guide installation
 permalink: /guide-installation-studiojekyll.html
+title: Guide d'installation de l'environnement de travail
 ---
-# Guide d'installation de l'environnement de travail _Studio Jekyll_
-
 ## Composition de notre environnement de travail
 
 * L'IDE Microsoft **Visual Studio Code**. Il intègre :

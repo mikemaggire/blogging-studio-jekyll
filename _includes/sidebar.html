@@ -15,32 +15,28 @@
     {%- for node in pages_list -%}
       {%- if node.sidebar != null -%}
       <a class="sidebar-nav-item{% if page.permalink == node.permalink %} active{% endif %}" 
-        {%- if (site.baseurl == null) or (site.baseurl =='') -%}
-          href="{{ node.permalink }}">{{ node.sidebar }}</a>
-        {%- else -%}
           href="{{ site.baseurl }}{{ node.permalink }}">{{ node.sidebar }}</a>
-        {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
   </nav>
   <div class="sidebar-item">
 
       <p>
-      {% if site.author.twitter_id %}
+      {%- if site.author.twitter_id -%}
         <a href="https://twitter.com/{{ site.author.twitter_id }}" class="fa fa-twitter"></a>
       {% endif %}
-      {% if site.author.linkedin_id %}
+      {%- if site.author.linkedin_id -%}
         <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" class="fa fa-linkedin"></a>
       {% endif %}
-      {% if site.author.gplus_id %}
+      {%- if site.author.gplus_id -%}
         <a href="https://plus.google.com/{{ site.author.gplus_id }}" class="fa fa-google"></a>
       {% endif %}
-      {% if site.author.facebook_id %}
+      {%- if site.author.facebook_id -%}
         <a href="https://www.facebook.com/{{ site.author.facebook_id }}" class="fa fa-facebook"></a>
       {% endif %}
-      {% if site.author.github_id %}
+      {%- if site.author.github_id -%}
         <a href="https://github.com/{{ site.author.github_id }}" class="fa fa-github"></a>
-      {% endif %}
+      {%- endif -%}
       <a href="{{ site.basurl }}/feed.xml" class="fa fa-rss"></a>
       </p>
 
@@ -48,16 +44,16 @@
       {%- assign env = jekyll.environment -%}
       {%- if env == 'development' -%}
         Version developpement 
-      {% else %}
-        {% if env != 'production' %}
+      {%- else -%}
+        {%- if env != 'production' -%}
           Version {{ env }}
         {%- endif -%}
       {%- endif -%}
      
-      {% if site.version %}<br />
+      {%- if site.version -%}<br />
         {%- if env == blank or env == 'development' -%}basée sur {% endif %}
         {{ site.version }}
-      {% endif %}
+      {%- endif -%}
       </p>
 
     <p>

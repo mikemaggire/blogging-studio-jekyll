@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Guide de rédaction et de publication
 sidebar: Guide rédaction & publication
 permalink: /guide-rediger-publier-studiojekyll.html
 category: guide
+title: Guide de rédaction et de publication avec StudioJekyll
 ---
-# Guide de rédaction et de publication avec _Studio Jekyll_
-
 Dans ce guide nous allons voir :
 1. comment [rédiger votre 1er article]()
 1. comment [publier votre site]()
