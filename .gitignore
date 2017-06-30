@@ -9,5 +9,4 @@ node_modules/
 # exclude deployement batches
 #
 _studiojekyll/deploy2*.*
-
-
+_studiojekyll/_version.yml
