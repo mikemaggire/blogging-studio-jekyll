@@ -1,7 +1,7 @@
 {
         "//": "scripts js à lancer avec la commande 'npm run ...' ou via le 'task runner' de VScode pour automatiser les build et les deploiements",
         "name": "automation",
-        "version": "0.3.5",
+        "version": "0.3.6",
         "authors": "mike.maggire",
         "scripts": {
                 "clean:jekyll": "jekyll clean && rimraf _site_ready2deploy",
