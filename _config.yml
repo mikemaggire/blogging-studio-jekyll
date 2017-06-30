@@ -17,26 +17,30 @@ author:
   twitter_username: mikemaggire
   github_username:  mike.maggire
 
-# Le numéro de version du site, à incrémenter au moment des publications
-# Nous recommandons de suivre les principes de la gestion sémantique des versions http://semver.org/lang/fr/
-version: 0.2.0 ALPHA2
-
-############################################################
+# paramètres spécifique à ce site
 collections:
   guide: 
     output: true
     permalink: /:collection/:title.html
 
-############################################################
-# ####### Gestion des commentaires sur les pages #########
-# Pour activer DISQUS à la fin des articles
-# Vous devez renseigner votre identifiant DISQUS en face de 'shortname' (voir https://disqus.com/)
-# Vous plus d'explications lisez notre article : http://wiki.maggire.net/blogging-studio-jekyll/2017/06/25/comment-activer-commentaires.html
-# Pour désactiver DISQUS mettez les deux lignes suivantes en commentaire
+############################################################ VERSION
+# NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
+# au moment du deploiement en test et en prod
+# Le numéro z est incrémenté à chaque build de l'environnement de test
+# Le numéro y est incrémenté à chaque build de l'environnement de prod
+# Pour incrémenter le numéro de version majeur (x), utilisez la commande
+# 'npm version major' en ouvrant une console au niveau du repertoire racine de votre sire
+
+############################################################ COMMENTAIRES
+# Pour activer DISQUS à la fin des articles 
+# renseignez votre identifiant DISQUS (voir https://disqus.com/) 
+# en face de la variable 'shortname' ci-après.
+# Plus d'explications : http://wiki.maggire.net/blogging-studio-jekyll/2017/06/25/comment-activer-commentaires.html
+# Pour désactiver DISQUS, mettez les deux lignes suivantes en commentaire
 disqus:
   shortname: blogging-studio-jekyll
 
-############################################################
+############################################################ ANALYTICS
 # Pour activer Google Analytics sur vos pages
 # Sinon mettez cette ligne en commentaire
 google_analytics: UA-23118933-9

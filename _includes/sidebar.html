@@ -22,12 +22,29 @@
         {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
-    <span class="sidebar-nav-item">Version v{{ site.version }}</span>
   </nav>
-
   <div class="sidebar-item">
+    <span class="sidebar-item">
+      <p>
+      {%- assign env = jekyll.environment -%}
+      {%- if env == 'development' -%}
+        Version developpement 
+      {% else %}
+        {% if env != 'production' %}
+          Version {{ env }}
+        {%- endif -%}
+      {%- endif -%}
+     
+      {% if site.version %}<br />
+        {%- if env == blank or env == 'development' -%}basée sur {% endif %}
+        {{ site.version }}
+      {% endif %}
+      </p>
+    </span>
+    <span class="sidebar-item">
     <p>
-      &copy; {{- site.time | date: '%Y' -}} <a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.
+      &copy; {{ site.time | date: '%Y' }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.
     </p>
+    </span>
   </div>
 </div>

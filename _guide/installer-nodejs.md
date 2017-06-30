@@ -76,11 +76,16 @@ Installez les avec les commandes suivantes :
 > npm install --global parallelshell
 > npm install --global copyfiles
 > npm install --global opn-cli
+> npm install --global write
 ```
 
 Puis lancer la commande `> npm config set loglevel  'error'` pour éviter de voir apparaitre trop de messages dans la console quand nous executerons ces programmes.
 
-> _:exclamation: Pour lister tous les modules npm installés au niveau global sur votre machine utilisez la commande `> npm list -g --depth=0`_
+Ensuite il faut créer la variable d'environnement `NODE_PATH` pour nodejs. Ouvre le panneau de controle `controle.exe sysdm.cpl,System,3`, puis [Variables d'environnement], puis [nouvelle variable utilisateur] et enfin `NODE_PATH` dans le nom de la variable et `%AppData%\npm\node_modules` dans la valeur de la variable.
+
+> _:exclamation: Vous devez redémarrer VS Code pour recharger les variables d'environnement._
+
+> _:exclamation: Pour lister tous les modules npm installés au niveau global sur votre machine utilisez la commande `npm list -g --depth=0`_
 
 ---
 
@@ -89,7 +94,7 @@ Puis lancer la commande `> npm config set loglevel  'error'` pour éviter de voi
 Récapitulons :  
 :white_check_mark: [ruby et ses plugins sont installés]({{ site.baseurl }}{% link _guide/installer-ruby.md %})  
 :white_check_mark: [jekyll et ses plugins sont installés]({{ site.baseurl }}{% link _guide/installer-jekyll.md %})  
-:white_check_mark: nodejs, lite-server et les utilitaires node sont installés
+:white_check_mark: nodejs, lite-server et les utilitaires nodejs sont installés
 
 Bravo :+1:
 
