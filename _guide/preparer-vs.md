@@ -106,7 +106,7 @@ Récapitulons :
 :white_check_mark: visual studio a été configuré  
 :white_check_mark: vous avez accès aux repositories de GITHUB et vous allez donc pouvoir cloner un site de référence pour créer votre 1er site
 
-Vous pouvez continuer avec le [Guide de création d'un nouveau site]({{ site.baseurl }}{% link guide-creation-site.md %}).
+Vous pouvez continuer avec le [Guide de création d'un nouveau site]({{ site.baseurl }}{% link _pages/guide-creation-site.md %}).
 
 Let's go !
 

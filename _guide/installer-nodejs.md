@@ -100,8 +100,8 @@ Bravo :+1:
 
 Pour la prochaine étape cela dépend si vous avez déja `visual studio code` sur votre machine. Il nous faut au moins la version 1.13.
 
-| [:white_large_square: installer visual studio code :fast_forward:](https://code.visualstudio.com/) |
-| [:white_large_square: preparer visual studio code :fast_forward:]({{ site.baseurl }}{% link _guide/preparer-vs.md %}) |
+| [:fast_forward: installer visual studio code](https://code.visualstudio.com/) |
+| [:fast_forward: preparer visual studio code]({{ site.baseurl }}{% link _guide/preparer-vs.md %}) |
 
 ---
 

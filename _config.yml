@@ -5,7 +5,7 @@
 
 # Configuration initiale
 title: Blogging StudioJekyll
-tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
+tagline: Suivez le guide
 description: Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.
 
 # References de l'auteur du site
@@ -26,6 +26,8 @@ collections:
   guide: 
     output: true
     permalink: /:collection/:title.html
+  pages:
+    output: true
 
 ############################################################ VERSION
 # NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
@@ -91,6 +93,7 @@ exclude:
 # Nous forcons le traitement de .htaccess
 include: 
   - .htaccess
+#  - _pages
 
 #kramdown:
 #  auto_ids:       true

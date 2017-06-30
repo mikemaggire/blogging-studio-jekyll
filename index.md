@@ -15,9 +15,9 @@ _`Studio Jekyll`_ est destiné aux **utilisateurs de Windows** qui cherchent cr�
 
 ![maggire-blogging-jekyll3-&-vscode]({{ site.baseurl }}/assets/maggire-blogging-jekyll3-&-vscode.png)
 
-- Suivez le [guide d'installation de l'environnement de travail]({{ site.baseurl }}{% link guide-installation.md %}).
-- Suivez le [guide d'initialisation d'un nouveau site ou blog]({{ site.baseurl }}{% link guide-creation-site.md %}).
-- Suivez le [guide de rédaction et de publication]({{ site.baseurl }}{% link guide-redaction-publication.md %}).
+- Suivez le [guide d'installation de l'environnement de travail]({{ site.baseurl }}{% link _pages/guide-installation.md %}).
+- Suivez le [guide d'initialisation d'un nouveau site ou blog]({{ site.baseurl }}{% link _pages/guide-creation-site.md %}).
+- Suivez le [guide de rédaction et de publication]({{ site.baseurl }}{% link _pages/guide-redaction-publication.md %}).
 - Suivez le [blog Studio Jekyll]({{ site.baseurl }}{% link blog.md %})
 
 > _Ce site a été créé avec `Studio Jekyll` :smile:_
@@ -81,4 +81,4 @@ Ecrire le contenu des pages et des articles est simple et facile avec _`Jekyll`_
 
 ---
 
-| Pour commencer, [installez votre environnement :fast_forward:]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) | Si votre environnement est déja prêt, [créez un nouveau site ou blog :fast_forward:]({{ site.baseurl }}{% link guide-creation-site.md %}) |
+| Pour commencer, [installez votre environnement :fast_forward:]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) | Si votre environnement est déja prêt, [créez un nouveau site ou blog :fast_forward:]({{ site.baseurl }}{% link _pages/guide-creation-site.md %}) |

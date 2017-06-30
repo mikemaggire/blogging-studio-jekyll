@@ -76,7 +76,7 @@ Voila, Ruby est opérationnel sur votre PC ! :+1:
 
 ## Prochaine étapes
 
-| [:white_large_square: Installer Jekyll :fast_forward:]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) |
+| [:fast_forward: Installer Jekyll]({{ site.baseurl }}{% link _guide/installer-jekyll.md %}) |
 
 ---
 

@@ -64,7 +64,7 @@ Yes, Jekyll est opérationnel sur votre PC ! :+1:
 
 ## Prochaines étapes
 
-| [:white_large_square: installer nodejs et lite-server :fast_forward:]({{ site.baseurl }}{% link _guide/installer-nodejs.md %}) |
+| [:fast_forward: installer nodejs et lite-server]({{ site.baseurl }}{% link _guide/installer-nodejs.md %}) |
 
 ---
 

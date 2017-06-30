@@ -15,4 +15,4 @@ TODO: _à completer_
 
 ## Pour continuer
 
-Continuez avec le [guide pour rédiger et publier]({{ site.baseurl }}{% link guide-redaction-publication.md %})
+Continuez avec le [guide pour rédiger et publier]({{ site.baseurl }}{% link _pages/guide-redaction-publication.md %})
