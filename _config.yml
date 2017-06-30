@@ -6,16 +6,20 @@
 # Configuration initiale
 title: Blogging StudioJekyll
 tagline: Guides pas à pas pour publier sur vos serveurs en quelques minutes.
-description: Guides pour creer rapidement des sites web performants et funs avec Jekyll et Visual Studio.
+description: Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.
 
-# References de l'auteur
+# References de l'auteur du site
 # Seul le nom est obligatoire
+# Les id sont utilisés pour faire apparaitre mes boutons réseaux sociaux sur le site
 author:
   name: Mike Maggire
   url: https://twitter.com/mikemaggire
   email: mike.maggire@gmail.com
-  twitter_username: mikemaggire
-  github_username:  mike.maggire
+  twitter_id: mikemaggire
+  github_id:  mike.maggire
+  #gplus_id: +mikemaggire
+  #facebook_id: mikemaggire
+  #linkedin_id: mikemaggire
 
 # paramètres spécifique à ce site
 collections:

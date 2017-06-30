@@ -24,7 +24,26 @@
     {%- endfor -%}
   </nav>
   <div class="sidebar-item">
-    <span class="sidebar-item">
+
+      <p>
+      {% if site.author.twitter_id %}
+        <a href="https://twitter.com/{{ site.author.twitter_id }}" class="fa fa-twitter"></a>
+      {% endif %}
+      {% if site.author.linkedin_id %}
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" class="fa fa-linkedin"></a>
+      {% endif %}
+      {% if site.author.gplus_id %}
+        <a href="https://plus.google.com/{{ site.author.gplus_id }}" class="fa fa-google"></a>
+      {% endif %}
+      {% if site.author.facebook_id %}
+        <a href="https://www.facebook.com/{{ site.author.facebook_id }}" class="fa fa-facebook"></a>
+      {% endif %}
+      {% if site.author.github_id %}
+        <a href="https://github.com/{{ site.author.github_id }}" class="fa fa-github"></a>
+      {% endif %}
+      <a href="{{ site.basurl }}/feed.xml" class="fa fa-rss"></a>
+      </p>
+
       <p>
       {%- assign env = jekyll.environment -%}
       {%- if env == 'development' -%}
@@ -40,11 +59,12 @@
         {{ site.version }}
       {% endif %}
       </p>
-    </span>
-    <span class="sidebar-item">
+
     <p>
-      &copy; {{ site.time | date: '%Y' }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.
+      &copy; {{ site.time | date: '%Y' }} {% if site.author.name %}<a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.{% endif %}
     </p>
-    </span>
+    <p>
+      Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a>
+    </p>
   </div>
 </div>
