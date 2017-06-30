@@ -18,7 +18,7 @@ _`Studio Jekyll`_ est destiné aux **utilisateurs de Windows** qui cherchent cr�
 - Suivez le [guide d'installation de l'environnement de travail]({{ site.baseurl }}{% link _pages/guide-installation.md %}).
 - Suivez le [guide d'initialisation d'un nouveau site ou blog]({{ site.baseurl }}{% link _pages/guide-creation-site.md %}).
 - Suivez le [guide de rédaction et de publication]({{ site.baseurl }}{% link _pages/guide-redaction-publication.md %}).
-- Suivez le [blog Studio Jekyll]({{ site.baseurl }}{% link blog.md %})
+- Suivez le [blog Studio Jekyll]({{ site.baseurl }}{% link _pages/blog.md %})
 
 > _Ce site a été créé avec `Studio Jekyll` :smile:_
 
