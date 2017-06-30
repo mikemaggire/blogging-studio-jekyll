@@ -1,5 +1,6 @@
 ---
 layout: page  
+category: guide
 title:  Installer Ruby sur Windows 10
 ---
 Ruby est le langage de programmation dans lequel est écrit `Jekyll`. Nous devons installer :

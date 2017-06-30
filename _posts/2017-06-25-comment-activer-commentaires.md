@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: guide
+category: guide
 author: Mike Maggire
 title: Comment activer les commentaires sur un site StudioJekyll
 ---

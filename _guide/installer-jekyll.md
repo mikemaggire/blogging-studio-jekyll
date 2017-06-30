@@ -1,5 +1,6 @@
 ---
 layout: page 
+category: guide
 title: Installer Jekyll et ses plugins sur Windows
 ---
 `Jekyll` est le générateur de site statique qui va transformer nos fichiers textes en fichiers HTML. Nous allons :

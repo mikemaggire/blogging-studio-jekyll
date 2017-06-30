@@ -1,5 +1,6 @@
 ---
 layout: page 
+category: guide
 title : Installer nodejs et lite-server sur windows
 ---
 Pour pouvoir tester le site web ou les nouveaux articles créés directement dans `Visual Studio Code` nous avons besoin qu'un serveur web s'execute en local sur notre PC. Ce serveur va avoir pour mission de servir notre site statique comme s'il était publié sur un serveur distant.
