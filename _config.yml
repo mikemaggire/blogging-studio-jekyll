@@ -25,6 +25,11 @@ github_userid:  mikemaggire
 #facebook_userid: mikemaggire
 #linkedin_userid: mikemaggire
 
+############################################################ URL SITE
+# A noter que l'URL de votre site publié doit être configurer dans le fichier 
+# de configuration des publication, _config_test.yml et _config_prod.yml qui
+# se trouvent dans le repertoire _studiojekyll
+
 ############################################################ VERSION
 # NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
 # au moment du deploiement en test et en prod

@@ -4,7 +4,7 @@ _site
 _site_ready2deploy
 .jekyll-metadata
 .sass-cache
-node_modules/
+node_modules
 
 # exclude deployement batches
 #
