@@ -8,18 +8,18 @@ title: Blogging StudioJekyll
 tagline: Suivez le guide
 description: Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.
 
-# References de l'auteur du site
-# Seul le nom est obligatoire
-# Les id sont utilisés pour faire apparaitre mes boutons réseaux sociaux sur le site
-author:
+copyright:
   name: Mike Maggire
   url: https://twitter.com/mikemaggire
-  email: mike.maggire@gmail.com
-  twitter_id: mikemaggire
-  github_id:  mikemaggire
-  #gplus_id: +mikemaggire
-  #facebook_id: mikemaggire
-  #linkedin_id: mikemaggire
+  licence: Libre de droits sous license MIT
+
+# id utilisés pour faire apparaitre les boutons réseaux sociaux sur le site
+email: mike.maggire@gmail.com
+twitter_userid: mikemaggire
+github_userid:  mikemaggire
+#gplus_userid: +mikemaggire
+#facebook_userid: mikemaggire
+#linkedin_userid: mikemaggire
 
 ############################################################ VERSION
 # NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
@@ -27,7 +27,7 @@ author:
 # Le numéro z est incrémenté à chaque build de l'environnement de test
 # Le numéro y est incrémenté à chaque build de l'environnement de prod
 # Pour incrémenter le numéro de version majeur (x), utilisez la commande
-# 'npm version major' en ouvrant une console au niveau du repertoire racine de votre sire
+# 'npm version major' en ouvrant une console au niveau du repertoire racine de votre site
 
 ############################################################ COMMENTAIRES
 # Pour activer DISQUS à la fin des articles 
@@ -41,7 +41,7 @@ disqus:
 ############################################################ ANALYTICS
 # Pour activer Google Analytics sur vos pages
 # Sinon mettez cette ligne en commentaire
-google_analytics: UA-23118933-9
+google_tracking_id: UA-23118933-9
 
 ############################################################
 # Les variables suivantes ne sont pas à modifier
@@ -54,24 +54,27 @@ lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
+paginate: 3
+paginate_path: "/blog/pages/page:num/"
 
-# le format type des permalink
-permalink: /blog/:categories/:title.html
+# le format type des permalink pour les posts
+permalink: :categories/blog/:title.html
 
 # Extension utilisées
 plugins: 
  - jekyll-feed
  - jemoji
  - jekyll-sitemap
+ - jekyll-paginate
 
 # Nous forcons le traitement de .htaccess
 include: 
   - .htaccess
+  - openurl.bat
 
 # Exclusions spécifiques à VS
 # Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
 exclude: 
- - LICENSE.txt
  - TODO.md
  - README.md
  - package.json
@@ -81,19 +84,16 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - node_modules
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
 
 # Traitement du repertoire _pages
 collections:
   guide: 
     output: true
-    permalink: /:collection/:title.html
+    permalink: /guide/:title.html
   pages:
     output: true
-
+    permalink: /:categories/:title.html
+    
 #kramdown:
 #  auto_ids:       true
 #  entity_output:  as_char

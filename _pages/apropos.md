@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /a-propos.html
-sidebar: A propos
+navbar: A propos
+navbarindex: 10
 title: A propos
 ---
 Je m'appelle Mike Maggire, je suis français et je travaille dans l'univers informatique depuis quelques années[^1]. Après avoir créé des sites web et des blogs _from scratch_, ou en utilisant des solutions pretes à l'emploi comme _strikingly.com_ ou _weebly.com_, ou encore à partir de CMS comme _Wordpress_, j'ai été confronté à plusieurs problèmes :

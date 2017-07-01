@@ -1,0 +1,45 @@
+---
+layout: default
+title: blog studiojekyll
+---
+<div class="home">
+  {{ content }}
+
+  <div class="post-preview">
+    {%- for post in paginator.posts -%}
+      <a href="{{ post.url | prepend: site.baseurl }}">
+          <h2 class="post-title">
+              {{ post.title }}
+          </h2>
+          {% if post.subtitle %}
+          <h3 class="post-subtitle">
+              {{ post.subtitle }}
+          </h3>
+          {% endif %}
+      </a>
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      <p class="post-meta">Publié par {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} le {{ post.date | date: date_format }}</p>
+    {%- endfor -%}
+  </div>
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<div class="pager">
+    {% if paginator.previous_page %}
+    <div class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Article précédent</a>
+    </div>
+    {% endif %}
+    {% if paginator.next_page %}
+    <div class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Article suivant &rarr;</a>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+
+<p></p>
+
+<p class="rss-subscribe">S'abonner au <a href="{{ "/feed.xml" | relative_url }}">flux RSS</a></p>
+
+</div>

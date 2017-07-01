@@ -16,10 +16,6 @@ baseurl: '/acceptance/blogging-studio-jekyll'
 strict_front_matter: true
 destination: _site_ready2deploy
 
-include:
- - .htaccess
- - openurl.bat
-
 # transpiler saas
 sass:
   sass_dir:          _sass

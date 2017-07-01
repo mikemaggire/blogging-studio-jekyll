@@ -1,6 +1,7 @@
 ---
 layout: page
-sidebar: Guide nouveau site
+navbar: Guide nouveau site
+navbarindex: 3
 permalink: /guide-nouveau-site-studiojekyll.html
 title: Guide de création et initialisation nouveau site web
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
-sidebar: Guide installation
+navbar: Guide installation
+navbarindex: 2
 permalink: /guide-installation-studiojekyll.html
 title: Guide d'installation de l'environnement de travail
 ---

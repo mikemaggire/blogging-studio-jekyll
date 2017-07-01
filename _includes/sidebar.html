@@ -9,33 +9,38 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Accueil</a>
 
-    {%- assign pages_list = site.pages | sort:"title" -%}
+    <a class="sidebar-nav-item{% if page.url == '' or page.url == '/index.html' %} active{% endif %}" href="{{ site.baseurl }}/">Accueil</a>
+    <a class="sidebar-nav-item{% if page.url == '/blog/' %} active{% endif %}" href="{{ site.baseurl }}/blog/index.html">Blog</a>
+
+    {%- assign pages_list = site.pages | sort:"navbarindex" -%}
     {%- for node in pages_list -%}
-      {%- if node.sidebar != null -%}
-      <a class="sidebar-nav-item{% if page.permalink == node.permalink %} active{% endif %}" 
-          href="{{ site.baseurl }}{{ node.permalink }}">{{ node.sidebar }}</a>
+      {%- if node.navbar != null -%}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" 
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.navbar }}</a>
       {%- endif -%}
     {%- endfor -%}
   </nav>
   <div class="sidebar-item">
 
       <p>
-      {%- if site.author.twitter_id -%}
-        <a href="https://twitter.com/{{ site.author.twitter_id }}" class="fa fa-twitter"></a>
+      {%- if site.twitter_userid -%}
+        <a href="https://twitter.com/{{ site.twitter_userid }}" class="fa fa-twitter"></a>
       {% endif %}
-      {%- if site.author.linkedin_id -%}
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" class="fa fa-linkedin"></a>
+      {%- if site.linkedin_userid -%}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_userid }}" class="fa fa-linkedin"></a>
       {% endif %}
-      {%- if site.author.gplus_id -%}
-        <a href="https://plus.google.com/{{ site.author.gplus_id }}" class="fa fa-google"></a>
+      {%- if site.gplus_userid -%}
+        <a href="https://plus.google.com/{{ site.gplus_userid }}" class="fa fa-google"></a>
       {% endif %}
-      {%- if site.author.facebook_id -%}
-        <a href="https://www.facebook.com/{{ site.author.facebook_id }}" class="fa fa-facebook"></a>
+      {%- if site.facebook_userid -%}
+        <a href="https://www.facebook.com/{{ site.facebook_userid }}" class="fa fa-facebook"></a>
       {% endif %}
-      {%- if site.author.github_id -%}
-        <a href="https://github.com/{{ site.author.github_id }}" class="fa fa-github"></a>
+      {%- if site.github_userid -%}
+        <a href="https://github.com/{{ site.github_userid }}" class="fa fa-github"></a>
+      {%- endif -%}
+      {%- if site.email -%}
+        <a href="mailto:{{ site.email }}" class="fa fa-envelope"></a>
       {%- endif -%}
       <a href="{{ site.basurl }}/feed.xml" class="fa fa-rss"></a>
       </p>
@@ -57,7 +62,7 @@
       </p>
 
     <p>
-      &copy; {{ site.time | date: '%Y' }} {% if site.author.name %}<a href="{{ site.author.url }}">{{ site.author.name }}</a>. Tous droits réservés.{% endif %}
+      &copy; {{ site.time | date: '%Y' }} {% if site.copyright.url %}<a href="{{ site.copyright.url }}">{{ site.copyright.name }}</a>{% else %}{{ site.copyright.name }}{% endif %} {{ site.time | date: '%Y' }}.<br/><a href="{{ site.baseurl }}/LICENSE.txt">{{ site.copyright.licence }}</a>
     </p>
     <p>
       Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a>

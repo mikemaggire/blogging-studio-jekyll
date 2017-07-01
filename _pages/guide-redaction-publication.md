@@ -1,6 +1,7 @@
 ---
 layout: page
-sidebar: Guide rédaction & publication
+navbar: Guide rédaction & publication
+navbarindex: 4
 permalink: /guide-rediger-publier-studiojekyll.html
 category: guide
 title: Guide de rédaction et de publication avec StudioJekyll
