@@ -3,30 +3,30 @@ layout: default
 ---
 {% assign defaultcomments = true %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    <div class="post-meta">
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}• Par <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
-        </span>
-      {%- endif -%}
 
-      <div class="tagline">
-      {% for tag in page.tags %}
-          • <a href="{{ site.baseurl }}/tags.html#{{ tag | slugize }}">{{ tag }}</a>
-      {% endfor %}
-      </div>
-    </div>
+  {% include post-header.html %}
 
-  </header>
-
+  <hr >
   <div class="post-content" itemprop="articleBody">
-  {{ content }}
+    {{ content }}
   </div>
+  <hr>
+
+  <!-- Pager -->
+  <div class="pager">
+      {% if page.previous.url %}
+      <span class="previous">
+          <a href="{{ site.baseurl }}{{ page.previous.url }}">&larr; Article précédent</a>
+      </span>
+      {% endif %}
+      {% if page.next.url %}
+      <span class="next">
+          <a href="{{ site.baseurl }}{{ page.next.url }}">Article suivant &rarr;</a>
+      </span>
+      {% endif %}
+  </div>
+
+  <hr>
 
   {% include disqus_comments.html %}
 

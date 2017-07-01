@@ -13,6 +13,10 @@ copyright:
   url: https://twitter.com/mikemaggire
   licence: Libre de droits sous license MIT
 
+author:
+  name: Mike Maggire
+  url: https://twitter.com/mikemaggire
+
 # id utilisés pour faire apparaitre les boutons réseaux sociaux sur le site
 email: mike.maggire@gmail.com
 twitter_userid: mikemaggire
@@ -54,8 +58,8 @@ lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
-paginate: 3
-paginate_path: "/blog/pages/page:num/"
+paginate: 7
+paginate_path: "/blog/pages/page:num"
 
 # le format type des permalink pour les posts
 permalink: :categories/blog/:title.html

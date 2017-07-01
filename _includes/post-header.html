@@ -1,0 +1,32 @@
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <p>{{ page.subtitle }}</p>
+    {% endif %}
+    <div class="post-meta">
+      {% if page.date_update %}Mis à jour{% else %}Publié{% endif %}
+      {% if site.author.name %} par <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name"><a href="{{ site.baseurl }}{{ site.author.url }}">{{ site.author.name }}</a></span>
+        </span>
+      {% endif %}
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      {% if page.date_update %}
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"></time>
+      <time class="post-date" datetime="{{ page.date_update | date_to_xmlschema }}" itemprop="dateModified">
+        le {{ page.date_update | date: date_format }}
+      </time>
+      {% else %}
+        {% if page.date %}
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        le {{ page.date | date: date_format }}
+      </time>
+      {% endif %}
+      {% endif %}
+
+      <div class="tagline">
+      {% for tag in page.tags %}
+          • <a href="{{ site.baseurl }}/tags.html#{{ tag | slugize }}">{{ tag }}</a>
+      {% endfor %}
+      </div>
+    </div>
+  </header>

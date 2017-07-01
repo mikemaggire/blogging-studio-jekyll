@@ -136,3 +136,71 @@ img {
     font-size: 36px;
   }
 }
+
+/*
+ *
+ * pagination
+ *
+*/
+
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+
+.pager {
+  margin: 20px 0 0;
+}
+.pager > a,
+.pager > span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 0;
+}
+@media only screen and (min-width: 768px) {
+  .pager > a,
+  .pager > span {
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+}
+.pager > a:hover,
+.pager > a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #808080;
+  background-color: #404040;
+  cursor: not-allowed;
+}
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
