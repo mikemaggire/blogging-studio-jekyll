@@ -2,7 +2,9 @@
 layout: post
 tags: Jekyll3 MiniMax
 author: Mike Maggire
-title: Minimax, le modèle de site pret à l'emploi
+title: Minimax, un modèle de site pret à l'emploi
+subtitle: "Simple et musclé : pages et blog, analytics, disqus, .htacces... et bien entendu conçus pour visual studio code. Enfin il intègre les taches de déploiement automatique."
+date_update: 2017-07-01 22:00:00 +0200
 ---
 Pour démarrer rapidement à rédiger du contenu avec `StudioJekyll` nous vous proposons d'utiliser le `modèle Minimax`. Ses caractéristiques sont détaillées dans cet article.
 

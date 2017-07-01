@@ -2,18 +2,19 @@
 layout: post
 tags: trucs-et-astuces
 author: Mike Maggire
-title: Bien rédiger sur le net
+title: Boite à outils du 'net writer'
+subtitle: Quelques liens utiles à avoir sous la mains quand on rédige sur le net.
+date_update: 2017-07-01 22:00:00 +0200
 ---
-Et oui, même sur le net on peut écrire le français correctement :
 
-* Dictionnaire Français de référence [lexilogos](http://www.lexilogos.com/francais_langue_dictionnaires.htm).
+* [Dictionnaire Français](http://www.lexilogos.com/francais_langue_dictionnaires.htm) de référence : Lexilogos.
 
-* Dictionnaire de [synonymes](http://www.crisco.unicaen.fr/des/) Français fourni par l'université de Caen.
+* [Dictionnaire de synonymes](http://www.crisco.unicaen.fr/des/) Français, fourni par l'université de Caen.
 
-* Pour la conjuguaison j'utilise le [conjugueur](http://leconjugueur.lefigaro.fr/) fourni par le Figaro.
+* [Conjugueur](http://leconjugueur.lefigaro.fr/) fourni par le Figaro.
 
-* Aide mémoire de base de la [syntaxe markdown](http://assemble.io/docs/Cheatsheet-Markdown.html).
+* [Aide mémoire markdown](http://assemble.io/docs/Cheatsheet-Markdown.html).
 
-* Aide mémoire de la [syntaxe étendue markdown github](https://guides.github.com/features/mastering-markdown/)
+* [Aide mémoire markdown étendue](https://guides.github.com/features/mastering-markdown/) pour github.
 
-* Codes [emotji](https://www.webpagefx.com/tools/emoji-cheat-sheet/) que vous pouvez utiliser dans vos publications. 
+* [Codes emotji](https://www.webpagefx.com/tools/emoji-cheat-sheet/) que vous pouvez utiliser dans vos publications. 

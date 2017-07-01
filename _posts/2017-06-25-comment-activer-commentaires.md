@@ -1,12 +1,13 @@
 ---
 layout: post
 category: guide
-author: Mike Maggire
 title: Comment activer les commentaires sur un site StudioJekyll
+subtitle: DISQUS est intégré à StudioJekyll, il ne reste qu'à créer un compte et à le configurer. Suivez le guide.
+date_update: 2017-07-01 22:00:00 +0200
 ---
 ## Technique du Mashup Applicatif
 
-Votre site est un site statique sans base de données et sans moyen d'authentification. La question est donc : comment mettre en place un système de commentaires dynamique necessitant une base de données et un système d'authentification ?
+Votre site est un site statique sans base de données et sans moyen d'authentification. La question est donc : comment mettre en place un système de commentaires dynamique necessitant une base de données et un système d'authentification !?
 
 La réponse est simple : grâce à la technique du **mashup applicatif**. 
 
