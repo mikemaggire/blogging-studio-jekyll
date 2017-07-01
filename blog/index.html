@@ -1,64 +1,11 @@
 ---
-layout: default
-title: Blog
+# Si vous souhaitez que la page d'acceuil de votre site soit le blog,
+# alors vous n'avez rien à modifier ici.
+# Sinon il vous suffit de remplacer le layout par 'page'
+# et de completer le contenu de cette page
+layout: bloglayout
 ---
-<div class="home">
-  <div class="post-preview">
-  {%- for post in paginator.posts -%}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
 
-    <p class="post-meta">
-      {% if post.date_update %}Mis à jour{% else %}Publié{% endif %}
-      {% if site.author.name %} par <a href="{{ site.baseurl }}{{ site.author.url }}">{{ site.author.name }}</a>{% endif %}
-
-    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-    {% if post.date_update %}
-        le {{ post.date_update | date: date_format }}
-    {% else %}
-        {% if post.date %}
-            le {{ post.date | date: date_format }}
-        {% endif %}
-    {% endif %}
-    </p>
-
-    <div class="tagline">
-    {% for tag in page.tags %}
-        • <a href="{{ site.baseurl }}/tags.html#{{ tag | slugize }}">{{ tag }}</a>
-    {% endfor %}
-    </div>
-
-  {%- endfor -%}
-  </div>
-
-  <hr>
-
-  <!-- Pager -->
-    {% if paginator.total_pages > 1 %}
-    <div class="pager">
-        {% if paginator.previous_page %}
-        <span class="previous">
-            <a href="{{ site.baseurl }}{{ paginator.previous_page_path}}/index.html">&larr; Article précédent</a>
-        </span>
-        {% endif %}
-        {% if paginator.next_page %}
-        <span class="next">
-            <a href="{{ site.baseurl }}{{ paginator.next_page_path }}/index.html">Article suivant &rarr;</a>
-        </span>
-        {% endif %}
-    </div>
-    {% endif %}
+Vous pouvez ajouter votre message de bienvenue au dessus des publications. :rocket:
 
 <hr>
-<p></p>
-<p class="rss-subscribe">S'abonner au <a href="{{ "/feed.xml" | relative_url }}">flux RSS</a></p>
-
-</div>
