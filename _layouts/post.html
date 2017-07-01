@@ -24,9 +24,10 @@ layout: default
           <a href="{{ site.baseurl }}{{ page.next.url }}">Article suivant &rarr;</a>
       </span>
       {% endif %}
+      {% if page.previous.url or page.next.url %}
+          <hr>
+      {% endif %}
   </div>
-
-  <hr>
 
   {% include disqus_comments.html %}
 
