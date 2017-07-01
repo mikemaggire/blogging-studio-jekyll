@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: Jekyll3 MiniMax
-author: Mike Maggire
 title: Minimax, un modèle de site pret à l'emploi
 subtitle: "Simple et musclé : pages et blog, analytics, disqus, .htacces... et bien entendu conçus pour visual studio code. Enfin il intègre les taches de déploiement automatique."
 date_update: 2017-07-01 22:00:00 +0200

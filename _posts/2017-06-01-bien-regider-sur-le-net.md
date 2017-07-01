@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: trucs-et-astuces
-author: Mike Maggire
 title: Boite à outils du 'net writer'
 subtitle: Quelques liens utiles à avoir sous la mains quand on rédige sur le net.
 date_update: 2017-07-01 22:00:00 +0200

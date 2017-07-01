@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: Jekyll3
-author: Mike Maggire
 title: Jekyll, pour créer tout type de site web et de blog, ou presque
 subtitle: Outre les performances et la sécurité élevée, Jekyll est très flexible. Il permet de génerer des sites intégrant de nombreuses fonctionnalités, voyez par vous même.
 date_update: 2017-07-01 22:00:00 +0200
