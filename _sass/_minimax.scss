@@ -5,7 +5,6 @@
  * https://github.com/.
  */
 
-
 /*
  * Contents
  *
@@ -81,20 +80,6 @@ img {
 }
 
 /*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
-
-.message {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
-}
-
-/*
  * Post preview
  *
  */
@@ -123,15 +108,8 @@ img {
 
 .post-preview > a:hover > .post-title
 {
-  color:  #2C81D1;
+  color: $themecolor;
 }
-
-/*.post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-}*/
 
 .post-meta {
 /*  display: inline;*/
@@ -190,8 +168,8 @@ img {
 .pager > a:hover,
 .pager > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: $themecolor;
+  border: 1px solid $themecolor;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -202,24 +180,3 @@ img {
   cursor: not-allowed;
 }
 
-/*::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #0085a1;
-}
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #0085a1;
-
-img::selection {
-  color: white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-}*/
