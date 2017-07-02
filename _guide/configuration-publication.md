@@ -9,7 +9,10 @@ title: Configurer publication d'un nouveau site
 
 ---
 
-> TODO: 
+Dans ce guide nous allons :  
+1. Modifier le fichier `_studiojekyll/_config_test.yml`
+1. Modifier le fichier `_studiojekyll/_config_prod.yml`
+1. Créer les fichiers de publication automatique
 
 ---
 
