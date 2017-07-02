@@ -19,15 +19,15 @@ Telechargez et executez [RubyInstaller for windows](https://rubyinstaller.org/do
 
 :warning:  Vous devez cocher `Add Ruby Executables to your PATH`.
 
-![install3]({{ site.baseurl }}/assets/rubyinstaller3.png)
+![install3]({{ site.baseurl }}/assets/img/rubyinstaller3.png)
 
 Vous pouvez vérifier que le programme est bien installé en allant dans la liste des programmes et fonctionnalités du panneau de configuration de votre ordinateur. Soit via le `menu démarrer`, soit avec la commande `> appwiz.cpl` pour ouvrir le panneau de configuration de Windows:
 
-![install5]({{ site.baseurl }}/assets/rubyinstaller5.png)
+![install5]({{ site.baseurl }}/assets/img/rubyinstaller5.png)
 
 Pour vous assurer que cela fonctionne bien, executez la commande `> ruby -v` :
 
-![install4]({{ site.baseurl }}/assets/rubyinstaller4.png)
+![install4]({{ site.baseurl }}/assets/img/rubyinstaller4.png)
 
 OK, votre PC peut maintenant executer des programmes écrits en Ruby !
 
@@ -41,7 +41,7 @@ OK, votre PC peut maintenant executer des programmes écrits en Ruby !
 
 Pour que certains programmes `ruby` fonctionnent et tout particulièrement certains plugins de jekyll, nous avons également besoin d'installer le kit de développement Ruby. Ce programme se trouve aussi sur la page de telechargement de [RubyInstaller](https://rubyinstaller.org/downloads/).
 
-![ruby-devkit-install]({{ site.baseurl }}/assets/ruby-devkit-install.png)
+![ruby-devkit-install]({{ site.baseurl }}/assets/img/ruby-devkit-install.png)
 
 Une fois téléchargé, vous devez lancer l'executable qui propose une décompression dans un repertoire de votre choix. Choisissez un emplacement définitif. Nous proposons de choisir un sous-repertoire de ruby que nous appelerons 'devkit'. Les fichiers telechargés et décompressés doivent donc se trouver dans `C:/ruby23-x64/devkit/`.
 
@@ -53,7 +53,7 @@ Ensuite il faut ouvrir un fenêtre de commandes dans ce repertoire et lancer suc
 > ruby dk.rb install
 ```
 
-![init-devkit-ruby.png]({{ site.baseurl }}/assets/init-devkit-ruby.png)
+![init-devkit-ruby.png]({{ site.baseurl }}/assets/img/init-devkit-ruby.png)
 
 :exclamation: Il est important que cette installation soit réussie. Aussi si vous avez besoin de plus d'explications ou d'aides sur les messages d'erreur rencontrés vous pouvez aller regarder du coté du [wiki dédié au kit de development de ruby](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
 

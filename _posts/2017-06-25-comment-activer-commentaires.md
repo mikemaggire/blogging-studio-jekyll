@@ -15,7 +15,7 @@ Cela consiste à intégrer à notre site du contenu qui vient d'une autre applic
 
 Cette application qui gère les commentaires et qui s'intègre aux autres sites c'est **DISQUS** !
 
-![disqus-logo.png]({{ site.baseurl }}/assets/disqus-logo.png)
+![disqus-logo.png]({{ site.baseurl }}/assets/img/disqus-logo.png)
 
 ---
 
@@ -25,7 +25,7 @@ La bonne nouvelle c'est que DISQUS est déja intégré aux sites StudioJekyll. P
 
 Voilà à quoi cela ressemble en bas de vos articles :
 
-![comment-wt-disqus2]({{ site.baseurl }}/assets/comment-wt-disqus2.png)
+![comment-wt-disqus2]({{ site.baseurl }}/assets/img/comment-wt-disqus2.png)
 
 ---
 

@@ -19,7 +19,7 @@ Nous vous présentons :
 
 Il s'agit avant tout d'un site initialisé avec `Jekyll3.5` et reprenant le style du `thème minima`. Le site que vous allez créer à partir du `modèle minimax` hérite donc des [caractéristiques des sites créés à partir de Jekyll]({{ site.baseurl }}{% post_url 2017-06-22-caracteristiques-sites-jekyll %}) et des caractéristiques du thème minima.
 
-![screenshot-minimax1.png]({{ site.baseurl }}/assets/screenshot-minimax1.png)
+![screenshot-minimax1.png]({{ site.baseurl }}/assets/img/screenshot-minimax1.png)
 
 Nous avons ajoutés :
 
@@ -41,7 +41,7 @@ Nous avons ajoutés :
 :white_check_mark: **Commentaires des internautes**
 
 - la prise en charge des commentaires des internautes avec `Disqus` sur vos articles et vos pages, paramétrable.  
-  ![comment-wt-disqus]({{ site.baseurl }}/assets/comment-wt-disqus.png)
+  ![comment-wt-disqus]({{ site.baseurl }}/assets/img/comment-wt-disqus.png)
 
 :white_check_mark: **Renforcement de la sécurité**
 
@@ -81,7 +81,7 @@ Ouvrir un dossier _Minimax_ sous `Visual Studio Code` vous fait immédiatement b
 
 Le déploiement automatisé est directement accessible depuis VisualStudio avec `CTRL + P` puis en tappant `task`.
 
-![task-deploiement]({{ site.baseurl }}/assets/task-deploiement.png)
+![task-deploiement]({{ site.baseurl }}/assets/img/task-deploiement.png)
 
 
 :white_check_mark: **traitement automatisé du déploiement vers les environnements de test et de production**

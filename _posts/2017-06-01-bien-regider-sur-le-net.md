@@ -17,3 +17,5 @@ date_update: 2017-07-01 22:00:00 +0200
 * [Aide mémoire markdown étendue](https://guides.github.com/features/mastering-markdown/) pour github.
 
 * [Codes emotji](https://www.webpagefx.com/tools/emoji-cheat-sheet/) que vous pouvez utiliser dans vos publications. 
+
+* [Palette de couleurs](http://clrs.cc/)

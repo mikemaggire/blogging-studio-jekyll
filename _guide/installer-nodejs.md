@@ -28,11 +28,11 @@ Nous allons donc installer :
 
 `nodejs` est une application windows comme les autres, elle apparait dans la liste des programmes de windows. Lancez la commande `> appwiz.cpl` pour ouvrir le panneau de configuration de Windows :
 
-![programme-nodejs-installe]({{ site.baseurl }}/assets/programme-nodejs-installe.png)
+![programme-nodejs-installe]({{ site.baseurl }}/assets/img/programme-nodejs-installe.png)
 
 Pour voir quelle version est installée, vous pouvez aussi utiliser la commande `> node -v`
 
-![check-node-version]({{ site.baseurl }}/assets/check-node-version.png)
+![check-node-version]({{ site.baseurl }}/assets/img/check-node-version.png)
 
 ---
 
@@ -50,7 +50,7 @@ Nous verrons plus tard comment l'utiliser en phase de rédaction de nos pages et
 
 Néanmoins, pour vérifier que cela fonctionne lancez la commande `> lite-server --baseDir="C:/temp"`.
 
-![lite-server-test1]({{ site.baseurl }}/assets/lite-server-test1.png)
+![lite-server-test1]({{ site.baseurl }}/assets/img/lite-server-test1.png)
 
 Vous devez avoir d'une part la console qui vous montre que le serveur n'arrive pas à servir le fichier `index.html` (erreur `404 GET /index.html`) ce qui est normal puisque ce fichier n'existe pas dans le repertoire `temp`.
 
@@ -58,7 +58,7 @@ Puis d'autre part vous avez votre navigateur par defaut qui s'est ouvert et qui 
 
 lite-server est donc fonctionnel. Mais allons legerement plus loin et sans refermer la console qui fait tourner le serveur web en tache de fond, modifiez l'URL en changeant le port `localhost:3001`. Vous voyez apparaitre l'interface de monitoring et de configuration du serveur `browsersync.io` encapsulé dans lite-server :open_mouth:
 
-![browsersync-test2]({{ site.baseurl }}/assets/browsersync-test2.png)
+![browsersync-test2]({{ site.baseurl }}/assets/img/browsersync-test2.png)
 
 ---
 

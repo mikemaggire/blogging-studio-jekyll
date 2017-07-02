@@ -70,7 +70,7 @@ Redémarrez Visual Studio qui doit maintenant intégrer les fonctions de Git.
 
 Pour vérifier, ouvrez le panneau de commande `CTRL + SHIFT + P` puis tappez `GIT`, vous devez voir apparaitre les commandes git :
 
-![git-embededd-vs]({{ site.baseurl }}/assets/git-embededd-vs.png)
+![git-embededd-vs]({{ site.baseurl }}/assets/img/git-embededd-vs.png)
 
 ---
 
@@ -82,14 +82,14 @@ Nous utiliserons `PSFTP` qui est un des plus simples, des plus robustes et pour 
 
 Telechargez `PSFTP.exe` sur le [site officiel](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) en choisissant la version 32bits ou 64bits.
 
-![psftp-download.png]({{ site.baseurl }}/assets/psftp-download.png)
+![psftp-download.png]({{ site.baseurl }}/assets/img/psftp-download.png)
 
 Il est telement simple qu'il n'y a pas de programme d'installation ! Le programme `psftp.exe` telechargé se suffit à lui même.
 Vous devez donc le déplacer dans un repertoire de votre PATH, comme `C:\Windows\System32` pour qu'il puisse s'executer depuis n'importe lequel de vos projets VS Code.
 
 Pour tester que cela fonctionne, appelez le programme depuis une ligne de commande ouverte à la racine de vos dossiers personnels.
 
-![psftp-ok.png]({{ site.baseurl }}/assets/psftp-ok.png)
+![psftp-ok.png]({{ site.baseurl }}/assets/img/psftp-ok.png)
 
 ---
 

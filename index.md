@@ -13,7 +13,7 @@ _`Studio Jekyll`_ est destiné aux **utilisateurs de Windows** qui cherchent cr�
 - en suivant un **processus de publication industriel**,
 - permettant des mises à jours et des publications **faciles et rapides**.
 
-![maggire-blogging-jekyll3-&-vscode]({{ site.baseurl }}/assets/maggire-blogging-jekyll3-&-vscode.png)
+![maggire-blogging-jekyll3-&-vscode]({{ site.baseurl }}/assets/img/maggire-blogging-jekyll3-&-vscode.png)
 
 - Suivez le [guide d'installation de l'environnement de travail]({{ site.baseurl }}{% link _pages/guide-installation.md %}).
 - Suivez le [guide d'initialisation d'un nouveau site ou blog]({{ site.baseurl }}{% link _pages/guide-creation-site.md %}).
@@ -28,7 +28,7 @@ _`Studio Jekyll`_ est destiné aux **utilisateurs de Windows** qui cherchent cr�
 
 _`Jekyll`_ est reputé pour être _la_ solution qui permet de créer un site web ou un blog exclusivement avec des **pages statiques**. Le site géneré, incluant les publications, n'a besoin de rien de plus qu'un simple serveur HTTP pour s'executer. **Pas de PHP, pas de JAVA, pas de base de données** ou que sais-je encore. Avec _`Jekyll`_ nous n'avons besoin que d'**un simple serveur Web HTTP en production**, et c'est tout !
 
-![schema serveur web simple]({{ site.baseurl }}/assets/serveur-web-ultra-simple.png)
+![schema serveur web simple]({{ site.baseurl }}/assets/img/serveur-web-ultra-simple.png)
 
 ---
 
@@ -50,7 +50,7 @@ Et si vous voulez changer d'hebergement ou de type de serveur, rien de plus simp
 
 1. **Rédigez** des articles et des pages en mode texte brut directement au sein de l'IDE **avec une prévisualisation en temps réel du rendu**.
 1. Suivez en continu les éventuels problèmes de syntaxe dans vos fichiers.
-    ![tracking-syntax-problems.png]({{ site.baseurl }}/assets/tracking-syntax-problems.png)
+    ![tracking-syntax-problems.png]({{ site.baseurl }}/assets/img/tracking-syntax-problems.png)
 
 1. Sauvegardez les brouillons ou vos modifications sans être obligé de les publier. D'autres personnes peuvent contribuer ou corriger (via Git).
 1. Automatisez un plan de tests (à venir).

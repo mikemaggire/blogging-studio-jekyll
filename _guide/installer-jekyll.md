@@ -29,11 +29,11 @@ Le logiciel Jekyll est un package de Ruby qu'il est necessaire d'installer avec 
 
 Après quelques secondes `Jekyll` et ses dépendances sont installés :
 
-![gem jekyll cmd line]({{ site.baseurl }}/assets/gemjekyll1.png)
+![gem jekyll cmd line]({{ site.baseurl }}/assets/img/gemjekyll1.png)
 
 Pour tester que Jekyll fonctionne bien, vous pouvez lancer la commande ```jekyll -v``` qui vous retourne le numéro de version du logiciel installé sur votre machine :
 
-![jekyll-v]({{ site.baseurl }}/assets/jekyll-v.png)
+![jekyll-v]({{ site.baseurl }}/assets/img/jekyll-v.png)
 
 > _Jekyll n'étant pas un programme windows il n'apparait pas dans la liste des programmes installés du panneau de configuration de windows._
 
