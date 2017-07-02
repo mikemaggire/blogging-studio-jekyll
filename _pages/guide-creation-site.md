@@ -7,10 +7,14 @@ title: Guide de création et initialisation nouveau site web
 ---
 Dans ce guide vous allez voir comment :
 
-- clonner un site type, et le tester en local
+- [Cloner un site à partir d'un modèle Github]({{ site.baseurl }}{% link _guide/cloner-site.md %}), et le tester en local
 - personnaliser le style de votre site
 
+
+
 TODO: _à completer_
+
+
 
 ## Pour continuer
 
