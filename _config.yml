@@ -52,6 +52,15 @@ disqus:
 # Sinon mettez cette ligne en commentaire
 google_tracking_id: UA-23118933-9
 
+############################################################ DESIGN CUSTOMIZATION
+
+# Défini si la bar denavigation doit inclure un lien vers /blog/index.html
+# Utile si la page principale de votre site n'affiche pas le blog
+showbloginnavbar: true
+
+# nombre maximum d'articles sur la page de blog
+paginate: 7
+
 ############################################################
 # Les variables suivantes ne sont pas à modifier
 ############################################################
@@ -63,7 +72,6 @@ lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
-paginate: 7
 paginate_path: "/blog/pages/page:num"
 
 # le format type des permalink pour les posts
