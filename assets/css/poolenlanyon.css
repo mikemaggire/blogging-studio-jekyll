@@ -512,15 +512,6 @@ a.sidebar-nav-item:focus {
   margin-top: 0;
 }
 
-/* Meta data line below post title */
-.post-meta {
-/*  display: inline;*/
-  margin-top: -.5rem;
-  margin-bottom: 2rem;
-  color: #9a9a9a;
-  font-style: italic;
-  font-size: 75%;
-}
 
 /* Related posts */
 .related {

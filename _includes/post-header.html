@@ -23,10 +23,10 @@
       {% endif %}
       {% endif %}
 
-      <div class="tagline">
+      <span class="tagline">
       {% for tag in page.tags %}
           • <a href="{{ site.baseurl }}/tags.html#{{ tag | slugize }}">{{ tag }}</a>
       {% endfor %}
-      </div>
+      </span>
     </div>
   </header>
