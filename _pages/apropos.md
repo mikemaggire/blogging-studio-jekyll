@@ -28,6 +28,14 @@ Mais voilà le ticket d'entrée n'a pas été neutre. Aussi j'ai créé StudioJe
 
 Bonnes publications sur le web :wink:
 
-_@mike_maggire_
+@mike_maggire
 
-[^1]: _depuis l'époque du ZX81 et de l'assembleur._
+---
+
+_**Informations de copryright**_
+
+<small>La texture du fond est fournie par [SubtlePatterns](https://www.toptal.com/designers/subtlepatterns/) sous licence [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)</small>
+
+---
+
+[^1]: <small>_depuis l'époque du ZX81 et de l'assembleur._</small>

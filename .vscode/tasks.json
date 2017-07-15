@@ -2,27 +2,51 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "build_jekyll_once",
-            "command": "npm run build",
-            "isShellCommand": true,
-            "isBuildCommand": true,
-            "showOutput": "always"
+            "label": "sjekyll build once",
+            "type": "npm",
+            "script": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
-            "taskName": "liverender",
-            "command": "npm run liverender",
-            "isShellCommand": true,
+            "identifier": "liverender",
+            "label": "sjekyll live rendering",
+            "type": "npm",
+            "script": "liverender",
             "isBackground": true,
-            "showOutput": "always"
-        },
-        {
-            "customize": "vscode.npm.run deploy:test",
-            "taskName": "npm : run deploy:test",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "dedicated"
+            },
             "problemMatcher": []
         },
         {
-            "customize": "vscode.npm.run deploy:prod",
-            "taskName": "npm : run deploy:prod",
+            "label": "sjekyll clean",
+            "type": "npm",
+            "script": "clean:jekyll",
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "sjekyll deploy to TEST env.",
+            "type": "npm",
+            "script": "deploy:test",
+            "problemMatcher": []
+        },
+        {
+            "label": "sjekyll deploy to PROD env.",
+            "type": "npm",
+            "script": "deploy:prod",
             "problemMatcher": []
         }
     ]

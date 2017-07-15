@@ -13,7 +13,17 @@
  * emoji
  */
 
-/* social buttons */
+/* texture de fond */
+
+@if variable-exists(backgroundtexture) {
+   body { 
+    background: url(#{$backgroundtexture}) repeat;  
+   }
+}
+
+.masthead {
+  background-color: white;
+}
 
 /* images */
 img {
