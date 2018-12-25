@@ -14,7 +14,9 @@ Pour réinitialiser les dépendances, supprimer le fichier `Gemfile.lock` et le 
 > bundle install
 ```
 
-Lancer la tache 
+Pour développer lancer la tache `sjekyll live rendering`, cela régénère le site et lance un serveur de rendering sur le port 3300.
+
+Pour déployer en production, lancer la tache `sjekyll deploy to PROD env`. Cela regenère le site directement dans le sous dossier `/docs` qui est utilisé par Githubpages pour afficher le site web.
 
 --------------
 

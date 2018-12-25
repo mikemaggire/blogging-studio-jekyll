@@ -95,8 +95,6 @@ exclude:
  - README.md
  - package.json
  - bs-config.json
- - deploy2prod.bat
- - deploy2test.bat
  - Gemfile
  - Gemfile.lock
  - node_modules
