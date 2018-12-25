@@ -14,7 +14,7 @@ baseurl: /blogging-studio-jekyll
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée un serveur de test
 strict_front_matter: true
-destination: _siteprod
+destination: docs
 
 # transpiler saas
 sass:

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://wiki.maggire.net/blogging-studio-jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://wiki.maggire.net/blogging-studio-jekyll/" rel="alternate" type="text/html" hreflang="fr" /><updated>2018-12-25T23:23:08+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/feed.xml</id><title type="html">Blogging StudioJekyll</title><subtitle>Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.</subtitle><author><name>Mike Maggire</name></author><entry><title type="html">Insertion de messages dans les articles et les pages</title><link href="http://wiki.maggire.net/blogging-studio-jekyll/blog/messages.html" rel="alternate" type="text/html" title="Insertion de messages dans les articles et les pages" /><published>2017-07-02T00:00:00+01:00</published><updated>2017-07-02T00:00:00+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/blog/messages</id><content type="html" xml:base="http://wiki.maggire.net/blogging-studio-jekyll/blog/messages.html">&lt;h2 id=&quot;message-simple&quot;&gt;Message simple&lt;/h2&gt;
+
+&lt;p&gt;Pour inserer un message dans une de vos pages ou un des vos articles, vous pouvz utiliser la classe de style que nous avons créé et qui est disponible dans studioJekyll.&lt;/p&gt;
+
+&lt;p&gt;Votre message en texte brut doit être entouré de la balise html &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; comme sur l’exemple suivant.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+:warning: Ceci est mon message.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cela donne ça :&lt;/p&gt;
+&lt;p class=&quot;message&quot;&gt;
+:warning: Ceci est mon message.
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;message-en-couleur&quot;&gt;Message en couleur&lt;/h2&gt;
+
+&lt;p&gt;Pour changer la couleur du fond du message, il faut préciser la couleur dans le nom de la classe. Par exemple &lt;code class=&quot;highlighter-rouge&quot;&gt;class=&quot;message-red&quot;&amp;gt;&lt;/code&gt;`.&lt;/p&gt;
+
+&lt;h3 id=&quot;list-des-couleurs-définies&quot;&gt;List des couleurs définies&lt;/h3&gt;
+
+&lt;p class=&quot;message-navy&quot;&gt;class=”message-navy”&lt;/p&gt;
+&lt;p class=&quot;message-blue&quot;&gt;class=”message-blue”&lt;/p&gt;
+&lt;p class=&quot;message-aqua&quot;&gt;class=”message-aqua”&lt;/p&gt;
+&lt;p class=&quot;message-teal&quot;&gt;class=”message-teal”&lt;/p&gt;
+&lt;p class=&quot;message-olive&quot;&gt;class=”message-olive”&lt;/p&gt;
+&lt;p class=&quot;message-green&quot;&gt;class=”message-green”&lt;/p&gt;
+&lt;p class=&quot;message-lime&quot;&gt;class=”message-lime”&lt;/p&gt;
+&lt;p class=&quot;message-yellow&quot;&gt;class=”message-yellow”&lt;/p&gt;
+&lt;p class=&quot;message-orange&quot;&gt;class=”message-orange”&lt;/p&gt;
+&lt;p class=&quot;message-red&quot;&gt;class=”message-red”&lt;/p&gt;
+&lt;p class=&quot;message-maroon&quot;&gt;class=”message-maroon”&lt;/p&gt;
+&lt;p class=&quot;message-fuschia&quot;&gt;class=”message-fuschia”&lt;/p&gt;
+&lt;p class=&quot;message-purple&quot;&gt;class=”message-purple”&lt;/p&gt;
+&lt;p class=&quot;message-black&quot;&gt;class=”message-black”&lt;/p&gt;
+&lt;p class=&quot;message-gray&quot;&gt;class=”message-gray”&lt;/p&gt;
+&lt;p class=&quot;message-silver&quot;&gt;class=”message-silver”&lt;/p&gt;
+&lt;p class=&quot;message-white&quot;&gt;class=”message-white”&lt;/p&gt;</content><author><name>Mike Maggire</name></author><summary type="html">Message simple</summary></entry><entry><title type="html">Comment activer les commentaires sur un site StudioJekyll</title><link href="http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires.html" rel="alternate" type="text/html" title="Comment activer les commentaires sur un site StudioJekyll" /><published>2017-06-25T00:00:00+01:00</published><updated>2017-06-25T00:00:00+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires</id><content type="html" xml:base="http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires.html">&lt;h2 id=&quot;technique-du-mashup-applicatif&quot;&gt;Technique du Mashup Applicatif&lt;/h2&gt;
+
+&lt;p&gt;Votre site est un site statique sans base de données et sans moyen d’authentification. La question est donc : comment mettre en place un système de commentaires dynamique necessitant une base de données et un système d’authentification !?&lt;/p&gt;
+
+&lt;p&gt;La réponse est simple : grâce à la technique du &lt;strong&gt;mashup applicatif&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cela consiste à intégrer à notre site du contenu qui vient d’une autre application web ! Concretement notre site web intègre un script &lt;code class=&quot;highlighter-rouge&quot;&gt;javascript&lt;/code&gt; qui va s’executer dans le navigateur de l’utilisateur. Sa fonction va être d’aller &lt;em&gt;chercher&lt;/em&gt; les commentaires dans une autre application web (une autre URL).&lt;/p&gt;
+
+&lt;p&gt;Cette application qui gère les commentaires et qui s’intègre aux autres sites c’est &lt;strong&gt;DISQUS&lt;/strong&gt; !&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blogging-studio-jekyll/assets/img/disqus-logo.png&quot; alt=&quot;disqus-logo.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;intégration-de-disqus-dans-studiojekyll&quot;&gt;Intégration de DISQUS dans &lt;em&gt;StudioJekyll&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;La bonne nouvelle c’est que DISQUS est déja intégré aux sites StudioJekyll. Plus exactement c’est le &lt;em&gt;script&lt;/em&gt; Disqus qui est déja intégré dans vos pages statiques. Il ne reste donc plus qu’à le configurer.&lt;/p&gt;
+
+&lt;p&gt;Voilà à quoi cela ressemble en bas de vos articles :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blogging-studio-jekyll/assets/img/comment-wt-disqus2.png&quot; alt=&quot;comment-wt-disqus2&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;configuration-des-commentaires-avec-disqus&quot;&gt;Configuration des commentaires avec DISQUS&lt;/h2&gt;
+
+&lt;p&gt;Vous devez avant tout &lt;a href=&quot;https://disqus.com/profile/signup/&quot;&gt;ouvrir un compte chez DISQUS&lt;/a&gt; (ils possèdent un plan gratuit entre autres). Puis vous allez ‘installer DISQUS sur un nouveau site’. Le système vous attribut alors un identifiant pour votre site qui s’appelle &lt;em&gt;shortname&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ensuite vous allez indiquer cet identifiant dans le fichier de configuration &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; de votre site &lt;em&gt;StudioJekyll&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# ###### Gestion des commentaires sur les pages #######&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Pour activer DISQUS à la fin des articles&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;shortname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;identifiant-donne-par-disqus&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Et c’est tout !&lt;/p&gt;
+
+&lt;p&gt;A partir de ce moment, la gestion des commentaires apparait par défaut en bas de tous les articles de blog (les pages associées au layout ‘post’), et n’apparait pas en bas des pages fixes (les pages associées au layout ‘page’).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;:exclamation: &lt;em&gt;la gestion des commentaires n’a pas été intégrée dans les autres layout.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;changer-le-comportement-par-defaut&quot;&gt;Changer le comportement par defaut&lt;/h2&gt;
+
+&lt;p&gt;Pour changer le comportement par defaut il faut aller modifier les fichiers &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout/page.html&lt;/code&gt; et &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout/post.html&lt;/code&gt; et changer la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;layoutcomments&lt;/code&gt; au tout début du fichier.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;default&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;assign layoutcomments = false %&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;forcer-le-comportement-sur-une-page-ou-un-article&quot;&gt;Forcer le comportement sur une page ou un article&lt;/h2&gt;
+
+&lt;p&gt;Dans l’entête de chacune de vos page et de vos articles vous pouvez forcer la gestion des commentaires en attribuant à &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; ou à &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;comments&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;mon article sans gestion des commentaires&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Mike Maggire</name></author><category term="guide" /><summary type="html">Technique du Mashup Applicatif</summary></entry><entry><title type="html">Minimax, un modèle de site pret à l’emploi</title><link href="http://wiki.maggire.net/blogging-studio-jekyll/blog/modele-site-minimax-studiojekyll.html" rel="alternate" type="text/html" title="Minimax, un modèle de site pret à l'emploi" /><published>2017-06-24T00:00:00+01:00</published><updated>2017-06-24T00:00:00+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/blog/modele-site-minimax-studiojekyll</id><content type="html" xml:base="http://wiki.maggire.net/blogging-studio-jekyll/blog/modele-site-minimax-studiojekyll.html">&lt;p&gt;Pour démarrer rapidement à rédiger du contenu avec &lt;code class=&quot;highlighter-rouge&quot;&gt;StudioJekyll&lt;/code&gt; nous vous proposons d’utiliser le &lt;code class=&quot;highlighter-rouge&quot;&gt;modèle Minimax&lt;/code&gt;. Ses caractéristiques sont détaillées dans cet article.&lt;/p&gt;
+
+&lt;p&gt;Nous vous présentons :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;les caractéristiques des sites web créés à partir de Minimax_&lt;/li&gt;
+  &lt;li&gt;les fonctions intégrées pour une utilisation avec Visual Studio Code&lt;/li&gt;
+  &lt;li&gt;les taches de déploiement automatique&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-sites-web-créés-à-partir-de-minimax&quot;&gt;1. Sites web créés à partir de &lt;em&gt;Minimax&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Il s’agit avant tout d’un site initialisé avec &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll3.5&lt;/code&gt; et reprenant le style du &lt;code class=&quot;highlighter-rouge&quot;&gt;thème minima&lt;/code&gt;. Le site que vous allez créer à partir du &lt;code class=&quot;highlighter-rouge&quot;&gt;modèle minimax&lt;/code&gt; hérite donc des &lt;a href=&quot;/blogging-studio-jekyll/blog/caracteristiques-sites-jekyll.html&quot;&gt;caractéristiques des sites créés à partir de Jekyll&lt;/a&gt; et des caractéristiques du thème minima.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blogging-studio-jekyll/assets/img/screenshot-minimax1.png&quot; alt=&quot;screenshot-minimax1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nous avons ajoutés :&lt;/p&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;Formatage Français du contenu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La langue &lt;code class=&quot;highlighter-rouge&quot;&gt;fr&lt;/code&gt; par defaut sur toutes les pages, ainsi que &lt;code class=&quot;highlighter-rouge&quot;&gt;l'encodage utf-8&lt;/code&gt; des fichiers.&lt;/li&gt;
+  &lt;li&gt;Le format &lt;code class=&quot;highlighter-rouge&quot;&gt;jj/mm/aaaa&lt;/code&gt; pour les dates.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;Amélioration du référencement sur les moteurs de recherche&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Le fichier &lt;code class=&quot;highlighter-rouge&quot;&gt;robots.txt&lt;/code&gt; pour (a) que vos images ne soient pas indexées, (b) référencer le sitemap.&lt;/li&gt;
+  &lt;li&gt;Un &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt;, qui se met à jour automatiquement à chaque génération de votre site.&lt;/li&gt;
+  &lt;li&gt;Un &lt;code class=&quot;highlighter-rouge&quot;&gt;flux RSS&lt;/code&gt; contenant vos publications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;Statistiques de consultation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;l’intégration de &lt;code class=&quot;highlighter-rouge&quot;&gt;google analytics&lt;/code&gt; sur toutes vos pages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;Commentaires des internautes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;la prise en charge des commentaires des internautes avec &lt;code class=&quot;highlighter-rouge&quot;&gt;Disqus&lt;/code&gt; sur vos articles et vos pages, paramétrable.&lt;br /&gt;
+&lt;img src=&quot;/blogging-studio-jekyll/assets/img/comment-wt-disqus.png&quot; alt=&quot;comment-wt-disqus&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;Renforcement de la sécurité&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;un fichier &lt;code class=&quot;highlighter-rouge&quot;&gt;.htaccess&lt;/code&gt; type (utile pour un hebergement sur un serveur LAMP type chez OVH )
+    &lt;ul&gt;
+      &lt;li&gt;incluant des directives pour renforcer la protection de votre site&lt;/li&gt;
+      &lt;li&gt;la prise en charge d’une page d’erreur 404 personnalisée&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;une &lt;code class=&quot;highlighter-rouge&quot;&gt;page 404&lt;/code&gt; personnalisée&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;et aussi…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;un &lt;code class=&quot;highlighter-rouge&quot;&gt;favicon&lt;/code&gt; par défaut (le standard et aussi celui pour la consultation sur iPhone)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-minimax-a-été-conçu-pour-visual-studio-code&quot;&gt;2. &lt;em&gt;Minimax&lt;/em&gt; a été conçu pour Visual Studio Code&lt;/h2&gt;
+
+&lt;p&gt;Ouvrir un dossier &lt;em&gt;Minimax&lt;/em&gt; sous &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt; vous fait immédiatement bénéficier des fonctions suivantes :&lt;/p&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;le ‘live rendering’&lt;/strong&gt;, c’est à dire la visualisation de l’aspect fini de votre site au fur et à mesure que vous saisissez. Pas besoin d’attendre de compilation ou de génération par batch.&lt;/p&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;des taches préparametrées sous VSCode&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;le rendu en live du site avec &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL + SHIFT + R&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;la génération immédiate et détaillée du site avec &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL + SHIFT + B&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;le forcage de l’encodage UTF-8 &lt;em&gt;sans BOM&lt;/em&gt; des fichiers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;au travers du fichier &lt;code class=&quot;highlighter-rouge&quot;&gt;.editorconfig&lt;/code&gt; préconfiguré. A noter que ce format d’encodage est requis impérativement par Jekyll et &lt;code class=&quot;highlighter-rouge&quot;&gt;Liquid&lt;/code&gt; sans quoi la génération du site ne fonctionne pas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;le controle de la syntaxe Markdown en cours de frappe&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;avec l’extension &lt;code class=&quot;highlighter-rouge&quot;&gt;markdownlint&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-déploiement-automatisé&quot;&gt;3. Déploiement automatisé&lt;/h2&gt;
+
+&lt;p&gt;Le déploiement automatisé est directement accessible depuis VisualStudio avec &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL + P&lt;/code&gt; puis en tappant &lt;code class=&quot;highlighter-rouge&quot;&gt;task&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blogging-studio-jekyll/assets/img/task-deploiement.png&quot; alt=&quot;task-deploiement&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;:white_check_mark: &lt;strong&gt;traitement automatisé du déploiement vers les environnements de test et de production&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;la build automatisé prend en compte les paramètres propres à l’environnement de destination comme l’URL, la compression des fichiers ou encore l’activation des fonctions d’analytics&lt;/li&gt;
+  &lt;li&gt;le transfert des fichiers via &lt;code class=&quot;highlighter-rouge&quot;&gt;SFTP&lt;/code&gt;, utilisable avec la plupart des hebergeurs de sites mutualisés&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mike Maggire</name></author><category term="Jekyll3" /><category term="MiniMax" /><summary type="html">Pour démarrer rapidement à rédiger du contenu avec StudioJekyll nous vous proposons d’utiliser le modèle Minimax. Ses caractéristiques sont détaillées dans cet article.</summary></entry><entry><title type="html">Jekyll, pour créer tout type de site web et de blog, ou presque</title><link href="http://wiki.maggire.net/blogging-studio-jekyll/blog/caracteristiques-sites-jekyll.html" rel="alternate" type="text/html" title="Jekyll, pour créer tout type de site web et de blog, ou presque" /><published>2017-06-22T00:00:00+01:00</published><updated>2017-06-22T00:00:00+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/blog/caracteristiques-sites-jekyll</id><content type="html" xml:base="http://wiki.maggire.net/blogging-studio-jekyll/blog/caracteristiques-sites-jekyll.html">&lt;h2 id=&quot;donc-jekyll-cest-quoi-précisement&quot;&gt;Donc Jekyll, c’est quoi précisement&lt;/h2&gt;
+
+&lt;p&gt;Jekyll est un &lt;strong&gt;générateur de site statique&lt;/strong&gt; simple, et de type blog. Il lui faut un répertoire de modèles contenant des &lt;strong&gt;fichiers de textes bruts et formatés&lt;/strong&gt; (la partie rédactionnelle de votre site, son contenu), puis il les traite à travers un &lt;strong&gt;convertisseur&lt;/strong&gt; comme &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; et le &lt;strong&gt;générateur de rendu&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Liquid&lt;/code&gt;, et produit un site Web statique complet et &lt;strong&gt;prêt à publier&lt;/strong&gt; vers &lt;strong&gt;votre serveur Web&lt;/strong&gt; préféré (chez un hebergeur par exemple). Jekyll est également le moteur de GitHub Pages, ce qui signifie que vous pouvez utiliser Jekyll pour héberger la page, le blog ou le site de votre projet à partir des serveurs de GitHub gratuitement.&lt;/p&gt;
+
+&lt;h2 id=&quot;caractéristiques-dun-site-web-généré-par-jekyll&quot;&gt;Caractéristiques d’un site web généré par Jekyll&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Le site web ne contient que des fichiers statiques, en conséquence de quoi :
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;les temps de réponse sont les meilleurs qui soient&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;le niveau de sécurité est elevé&lt;/strong&gt;, comparé aux sites dynamiques servis à partir d’un CMS&lt;/li&gt;
+      &lt;li&gt;en contrepartie, les possibilités de produire du contenu dynamiquement, par exemple à partir d’une base de données, n’est pas possible (cela n’empêche pas pour autant de pouvoir publier régulièrement des articles de blog).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Le site web contient &lt;strong&gt;une page principale&lt;/strong&gt;, la page d’accueil, qui peut être unique par ailleurs si vous les souhaitez.&lt;/li&gt;
+  &lt;li&gt;Le site web peut contenir &lt;strong&gt;autant de pages fixes que necessaire&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Le site web peut contenir &lt;strong&gt;des articles de blog&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Chaque page ou article peut &lt;strong&gt;intégrer des images, des vidéos, des pdf à telecharger&lt;/strong&gt; ou tout autre contenu intégrable sur n’importe que site. Ce contenu peut provenir d’un repertoire de votre propre sité généré, soit provenir d’un source extérieur comme par exemple une vidéo &lt;code class=&quot;highlighter-rouge&quot;&gt;Youtube&lt;/code&gt; ou encore les commentaires des blogueurs avec &lt;code class=&quot;highlighter-rouge&quot;&gt;Disqus&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Le &lt;strong&gt;design est moderne&lt;/strong&gt; : responsive, flat design, formulaires plein écran…&lt;/li&gt;
+  &lt;li&gt;Le &lt;strong&gt;design est totalement personnalisable&lt;/strong&gt;, vous avez accès à toutes les sources.&lt;/li&gt;
+  &lt;li&gt;Le &lt;strong&gt;design est interactif&lt;/strong&gt;, grâce à l’utilisation de composants &lt;code class=&quot;highlighter-rouge&quot;&gt;javascript&lt;/code&gt; : effets de “survols”, fondus, burger bouton…&lt;/li&gt;
+  &lt;li&gt;Techniquement le rendu respecte les standards &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML5&lt;/code&gt; et &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS3&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;et enfin, le tout est &lt;strong&gt;gratuit&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-pour-quoi-faire&quot;&gt;Jekyll, pour quoi faire&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un &lt;strong&gt;blog&lt;/strong&gt;, en tout premier lieu, mais pas que !&lt;/li&gt;
+  &lt;li&gt;Un &lt;strong&gt;wiki&lt;/strong&gt;, aussi, quand le contenu peut être enrichi par un groupe de personnes,&lt;/li&gt;
+  &lt;li&gt;De la &lt;strong&gt;documentation&lt;/strong&gt; au format web, très pratique.&lt;/li&gt;
+  &lt;li&gt;Un &lt;strong&gt;site institutionnel&lt;/strong&gt; “classique”.&lt;/li&gt;
+  &lt;li&gt;ou encore une &lt;strong&gt;single page&lt;/strong&gt; pour présenter un produit ou un service&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mike Maggire</name></author><category term="Jekyll3" /><summary type="html">Donc Jekyll, c’est quoi précisement</summary></entry><entry><title type="html">Boite à outils du ‘net writer’</title><link href="http://wiki.maggire.net/blogging-studio-jekyll/blog/bao.html" rel="alternate" type="text/html" title="Boite à outils du 'net writer'" /><published>2017-06-01T00:00:00+01:00</published><updated>2017-06-01T00:00:00+01:00</updated><id>http://wiki.maggire.net/blogging-studio-jekyll/blog/bao</id><content type="html" xml:base="http://wiki.maggire.net/blogging-studio-jekyll/blog/bao.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.lexilogos.com/francais_langue_dictionnaires.htm&quot;&gt;Dictionnaire Français&lt;/a&gt; de référence : Lexilogos&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.crisco.unicaen.fr/des/&quot;&gt;Dictionnaire de synonymes&lt;/a&gt; Français, fourni par l’université de Caen&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://leconjugueur.lefigaro.fr/&quot;&gt;Conjugueur&lt;/a&gt; fourni par le Figaro&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://assemble.io/docs/Cheatsheet-Markdown.html&quot;&gt;Aide mémoire markdown&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Aide mémoire markdown étendue&lt;/a&gt; pour github&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.webpagefx.com/tools/emoji-cheat-sheet/&quot;&gt;Codes emotji&lt;/a&gt; que vous pouvez utiliser dans vos publications&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://clrs.cc/&quot;&gt;Palette de couleurs&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.toptal.com/designers/subtlepatterns/page/6/&quot;&gt;Textures&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mike Maggire</name></author><category term="trucs-et-astuces" /><summary type="html">Dictionnaire Français de référence : Lexilogos</summary></entry></feed>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Ruby est le langage de programmation dans lequel est écrit Jekyll. Nous devons installer :">
+
+  <title>Installer Ruby sur Windows 10 - Blogging StudioJekyll</title>
+
+  <link rel="alternate" type="application/rss+xml" title="Blogging StudioJekyll" href="/blogging-studio-jekyll/feed.xml">
+  <link rel="canonical" href="http://wiki.maggire.net/blogging-studio-jekyll/guide/installer-ruby.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/minimax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- social icons and others -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/font-awesome.min.css" type="text/css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/blogging-studio-jekyll/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/blogging-studio-jekyll/favicon.ico">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body class="theme-base-color">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <!-- index -->
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/">Accueil</a>
+
+    <!-- blog -->
+    
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/blog/index.html">Blog</a>
+    
+
+    <!-- pages --><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-installation-studiojekyll.html">Guide installation</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-nouveau-site-studiojekyll.html">Guide nouveau site</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-rediger-publier-studiojekyll.html">Guide rédaction &amp; publication</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/tags.html">Tags</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/a-propos.html">A propos</a></nav>
+
+  <div class="sidebar-item">
+
+      <!-- social buttons -->
+      <p><a href="https://twitter.com/mikemaggire" class="fa fa-twitter"></a>
+        <a href="https://github.com/mikemaggire" class="fa fa-github"></a><a href="mailto:mike.maggire@gmail.com" class="fa fa-envelope"></a><a href="/feed.xml" class="fa fa-rss"></a>
+      </p>
+
+      <!-- version -->
+      <p><br>
+          v0.12.0</p>
+
+      <!-- copyright -->
+      <p>© 2018 <a href="https://twitter.com/mikemaggire">Mike Maggire</a> 2018.<br><a href="/blogging-studio-jekyll/LICENSE.txt">Libre de droits sous license MIT</a></p>
+
+      <!-- brand -->
+      <p>Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a></p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blogging-studio-jekyll/index.html" title="Accueil">Blogging StudioJekyll</a>
+            <small>Suivez le guide</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  
+  <header class="post-header">
+    <h1 class="page-title">Installer Ruby sur Windows 10</h1>
+    <div class="post-meta">
+      <div class="tagline">
+      
+      </div>
+    </div>
+  </header>
+      
+  <p>Ruby est le langage de programmation dans lequel est écrit <code class="highlighter-rouge">Jekyll</code>. Nous devons installer :</p>
+
+<ol>
+  <li>l’interpreteur <code class="highlighter-rouge">ruby</code> lui même,</li>
+  <li>le kit de développement utilisé par quelques pluggins,</li>
+  <li>des plugins ruby.</li>
+</ol>
+
+<hr>
+
+<h2 id="1-installer-ruby">1. Installer Ruby</h2>
+
+<p>Telechargez et executez <a href="https://rubyinstaller.org/downloads/">RubyInstaller for windows</a>.</p>
+
+<p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> Jekyll V3 à besoin de Ruby en version supérieure à la 2.0.0</p>
+
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20">  Vous devez cocher <code class="highlighter-rouge">Add Ruby Executables to your PATH</code>.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/rubyinstaller3.png" alt="install3"></p>
+
+<p>Vous pouvez vérifier que le programme est bien installé en allant dans la liste des programmes et fonctionnalités du panneau de configuration de votre ordinateur. Soit via le <code class="highlighter-rouge">menu démarrer</code>, soit avec la commande <code class="highlighter-rouge">&gt; appwiz.cpl</code> pour ouvrir le panneau de configuration de Windows:</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/rubyinstaller5.png" alt="install5"></p>
+
+<p>Pour vous assurer que cela fonctionne bien, executez la commande <code class="highlighter-rouge">&gt; ruby -v</code> :</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/rubyinstaller4.png" alt="install4"></p>
+
+<p>OK, votre PC peut maintenant executer des programmes écrits en Ruby !</p>
+
+<blockquote>
+  <p><em><strong>NOTE :</strong> Les programmes écrits en Ruby portent l’extension <code class="highlighter-rouge">.rb</code>.</em></p>
+</blockquote>
+
+<hr>
+
+<h2 id="2-installer-le-kit-de-développement-de-ruby">2. Installer le <em>kit de développement de Ruby</em>
+</h2>
+
+<blockquote>
+  <p><em>Si vous aviez deja installé Ruby auparavent, je vous recommande de lancer un update via la commande <code class="highlighter-rouge">&gt; gem update</code> avant de continuer</em></p>
+</blockquote>
+
+<p>Pour que certains programmes <code class="highlighter-rouge">ruby</code> fonctionnent et tout particulièrement certains plugins de jekyll, nous avons également besoin d’installer le kit de développement Ruby. Ce programme se trouve aussi sur la page de telechargement de <a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/ruby-devkit-install.png" alt="ruby-devkit-install"></p>
+
+<p>Une fois téléchargé, vous devez lancer l’executable qui propose une décompression dans un repertoire de votre choix. Choisissez un emplacement définitif. Nous proposons de choisir un sous-repertoire de ruby que nous appelerons ‘devkit’. Les fichiers telechargés et décompressés doivent donc se trouver dans <code class="highlighter-rouge">C:/ruby23-x64/devkit/</code>.</p>
+
+<p>Ensuite il faut ouvrir un fenêtre de commandes dans ce repertoire et lancer successivement trois commandes d’initialisation :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> devkitvars.bat
+<span class="o">&gt;</span> ruby dk.rb init
+<span class="o">&gt;</span> ruby dk.rb <span class="nb">install</span>
+</code></pre></div></div>
+
+<p><img src="/blogging-studio-jekyll/assets/img/init-devkit-ruby.png" alt="init-devkit-ruby.png"></p>
+
+<p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> Il est important que cette installation soit réussie. Aussi si vous avez besoin de plus d’explications ou d’aides sur les messages d’erreur rencontrés vous pouvez aller regarder du coté du <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">wiki dédié au kit de development de ruby</a>.</p>
+
+<hr>
+
+<h2 id="3-installer-les-plugins-ruby">3. Installer les plugins ruby</h2>
+
+<p>Nous avons besoin du <code class="highlighter-rouge">plugin wdm</code> qui permet de <em>scruter</em> les changements dans les répértoires Windows. Ce plugin est utilisé par l’option <code class="highlighter-rouge">--watch</code> de jekyll.</p>
+
+<p>Dans une fenêtre de commandes tappez la commande suivante :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> gem <span class="nb">install </span>wdm
+</code></pre></div></div>
+
+<p>Voila, Ruby est opérationnel sur votre PC ! <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
+
+<hr>
+
+<h2 id="prochaine-étapes">Prochaine étapes</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/blogging-studio-jekyll/guide/installer-jekyll.html"><img class="emoji" title=":fast_forward:" alt=":fast_forward:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/23e9.png" height="20" width="20"> Installer Jekyll</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3 id="références"><em>Références</em></h3>
+
+<ul>
+  <li>A propos de <a href="https://www.ruby-lang.org/fr/about/">Ruby</a>
+</li>
+  <li>
+<a href="https://github.com/Maher4Ever/wdm">plugin WDM</a> pour scruter les changements dans les repertoires Windows</li>
+</ul>
+
+
+  
+
+
+</article>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <!-- analytics --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23118933-9', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

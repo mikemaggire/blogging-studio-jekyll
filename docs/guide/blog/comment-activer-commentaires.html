@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Technique du Mashup Applicatif">
+
+  <title>Comment activer les commentaires sur un site StudioJekyll - Blogging StudioJekyll</title>
+
+  <link rel="alternate" type="application/rss+xml" title="Blogging StudioJekyll" href="/blogging-studio-jekyll/feed.xml">
+  <link rel="canonical" href="http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/minimax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- social icons and others -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/font-awesome.min.css" type="text/css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/blogging-studio-jekyll/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/blogging-studio-jekyll/favicon.ico">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body class="theme-base-color">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <!-- index -->
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/">Accueil</a>
+
+    <!-- blog -->
+    
+    <a class="sidebar-nav-item active" href="/blogging-studio-jekyll/blog/index.html">Blog</a>
+    
+
+    <!-- pages --><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-installation-studiojekyll.html">Guide installation</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-nouveau-site-studiojekyll.html">Guide nouveau site</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-rediger-publier-studiojekyll.html">Guide rédaction &amp; publication</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/tags.html">Tags</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/a-propos.html">A propos</a></nav>
+
+  <div class="sidebar-item">
+
+      <!-- social buttons -->
+      <p><a href="https://twitter.com/mikemaggire" class="fa fa-twitter"></a>
+        <a href="https://github.com/mikemaggire" class="fa fa-github"></a><a href="mailto:mike.maggire@gmail.com" class="fa fa-envelope"></a><a href="/feed.xml" class="fa fa-rss"></a>
+      </p>
+
+      <!-- version -->
+      <p><br>
+          v0.12.0</p>
+
+      <!-- copyright -->
+      <p>© 2018 <a href="https://twitter.com/mikemaggire">Mike Maggire</a> 2018.<br><a href="/blogging-studio-jekyll/LICENSE.txt">Libre de droits sous license MIT</a></p>
+
+      <!-- brand -->
+      <p>Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a></p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blogging-studio-jekyll/index.html" title="Accueil">Blogging StudioJekyll</a>
+            <small>Suivez le guide</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+    <h1 class="post-title">Comment activer les commentaires sur un site StudioJekyll</h1>
+    
+      <p>DISQUS est intégré à StudioJekyll, il ne reste qu'à créer un compte et à le configurer. Suivez le guide.</p>
+    
+    <div class="post-meta">
+      Mis à jour
+       par <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name"><a href="/blogging-studio-jekyllhttps://twitter.com/mikemaggire">Mike Maggire</a></span>
+        </span>
+      
+      <time class="post-date" datetime="2017-06-25T00:00:00+01:00" itemprop="datePublished"></time>
+      <time class="post-date" datetime="2017-07-01T21:00:00+01:00" itemprop="dateModified">
+        le 01/07/2017
+      </time>
+      
+
+      <span class="tagline">
+      
+      </span>
+    </div>
+  </header>
+
+
+  <hr>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="technique-du-mashup-applicatif">Technique du Mashup Applicatif</h2>
+
+<p>Votre site est un site statique sans base de données et sans moyen d’authentification. La question est donc : comment mettre en place un système de commentaires dynamique necessitant une base de données et un système d’authentification !?</p>
+
+<p>La réponse est simple : grâce à la technique du <strong>mashup applicatif</strong>.</p>
+
+<p>Cela consiste à intégrer à notre site du contenu qui vient d’une autre application web ! Concretement notre site web intègre un script <code class="highlighter-rouge">javascript</code> qui va s’executer dans le navigateur de l’utilisateur. Sa fonction va être d’aller <em>chercher</em> les commentaires dans une autre application web (une autre URL).</p>
+
+<p>Cette application qui gère les commentaires et qui s’intègre aux autres sites c’est <strong>DISQUS</strong> !</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/disqus-logo.png" alt="disqus-logo.png"></p>
+
+<hr>
+
+<h2 id="intégration-de-disqus-dans-studiojekyll">Intégration de DISQUS dans <em>StudioJekyll</em>
+</h2>
+
+<p>La bonne nouvelle c’est que DISQUS est déja intégré aux sites StudioJekyll. Plus exactement c’est le <em>script</em> Disqus qui est déja intégré dans vos pages statiques. Il ne reste donc plus qu’à le configurer.</p>
+
+<p>Voilà à quoi cela ressemble en bas de vos articles :</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/comment-wt-disqus2.png" alt="comment-wt-disqus2"></p>
+
+<hr>
+
+<h2 id="configuration-des-commentaires-avec-disqus">Configuration des commentaires avec DISQUS</h2>
+
+<p>Vous devez avant tout <a href="https://disqus.com/profile/signup/">ouvrir un compte chez DISQUS</a> (ils possèdent un plan gratuit entre autres). Puis vous allez ‘installer DISQUS sur un nouveau site’. Le système vous attribut alors un identifiant pour votre site qui s’appelle <em>shortname</em>.</p>
+
+<p>Ensuite vous allez indiquer cet identifiant dans le fichier de configuration <code class="highlighter-rouge">_config.yml</code> de votre site <em>StudioJekyll</em>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ###### Gestion des commentaires sur les pages #######</span>
+<span class="c1"># Pour activer DISQUS à la fin des articles</span>
+<span class="na">disqus</span><span class="pi">:</span>
+  <span class="na">shortname</span><span class="pi">:</span> <span class="s">identifiant-donne-par-disqus</span>
+</code></pre></div></div>
+
+<p>Et c’est tout !</p>
+
+<p>A partir de ce moment, la gestion des commentaires apparait par défaut en bas de tous les articles de blog (les pages associées au layout ‘post’), et n’apparait pas en bas des pages fixes (les pages associées au layout ‘page’).</p>
+
+<blockquote>
+  <p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> <em>la gestion des commentaires n’a pas été intégrée dans les autres layout.</em></p>
+</blockquote>
+
+<h2 id="changer-le-comportement-par-defaut">Changer le comportement par defaut</h2>
+
+<p>Pour changer le comportement par defaut il faut aller modifier les fichiers <code class="highlighter-rouge">_layout/page.html</code> et <code class="highlighter-rouge">_layout/post.html</code> et changer la variable <code class="highlighter-rouge">layoutcomments</code> au tout début du fichier.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="nn">---</span>
+<span class="pi">{</span><span class="err">%</span> <span class="nv">assign layoutcomments = false %</span><span class="pi">}</span>
+</code></pre></div></div>
+
+<h2 id="forcer-le-comportement-sur-une-page-ou-un-article">Forcer le comportement sur une page ou un article</h2>
+
+<p>Dans l’entête de chacune de vos page et de vos articles vous pouvez forcer la gestion des commentaires en attribuant à <code class="highlighter-rouge">true</code> ou à <code class="highlighter-rouge">false</code> la variable <code class="highlighter-rouge">comments</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">mon article sans gestion des commentaires</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">false</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+  </div>
+  <hr>
+
+  <!-- Pager -->
+  <div class="pager">
+      
+      <span class="previous">
+          <a href="/blogging-studio-jekyll/blog/modele-site-minimax-studiojekyll.html">← Article précédent</a>
+      </span>
+      
+      
+      <span class="next">
+          <a href="/blogging-studio-jekyll/blog/messages.html">Article suivant →</a>
+      </span>
+      
+      
+          <hr>
+      
+  </div>
+
+  <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires.html';
+        this.page.identifier = 'http://wiki.maggire.net/blogging-studio-jekyll/guide/blog/comment-activer-commentaires.html';
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://blogging-studio-jekyll.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+
+</article>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <!-- analytics --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23118933-9', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

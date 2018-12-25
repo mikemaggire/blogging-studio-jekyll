@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Prérequis :white_check_mark: installer l’environnement de travail">
+
+  <title>Cloner un site modèle à partir de GitHub - Blogging StudioJekyll</title>
+
+  <link rel="alternate" type="application/rss+xml" title="Blogging StudioJekyll" href="/blogging-studio-jekyll/feed.xml">
+  <link rel="canonical" href="http://wiki.maggire.net/blogging-studio-jekyll/guide/cloner-site.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/minimax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- social icons and others -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/font-awesome.min.css" type="text/css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/blogging-studio-jekyll/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/blogging-studio-jekyll/favicon.ico">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body class="theme-base-color">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <!-- index -->
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/">Accueil</a>
+
+    <!-- blog -->
+    
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/blog/index.html">Blog</a>
+    
+
+    <!-- pages --><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-installation-studiojekyll.html">Guide installation</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-nouveau-site-studiojekyll.html">Guide nouveau site</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-rediger-publier-studiojekyll.html">Guide rédaction &amp; publication</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/tags.html">Tags</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/a-propos.html">A propos</a></nav>
+
+  <div class="sidebar-item">
+
+      <!-- social buttons -->
+      <p><a href="https://twitter.com/mikemaggire" class="fa fa-twitter"></a>
+        <a href="https://github.com/mikemaggire" class="fa fa-github"></a><a href="mailto:mike.maggire@gmail.com" class="fa fa-envelope"></a><a href="/feed.xml" class="fa fa-rss"></a>
+      </p>
+
+      <!-- version -->
+      <p><br>
+          v0.12.0</p>
+
+      <!-- copyright -->
+      <p>© 2018 <a href="https://twitter.com/mikemaggire">Mike Maggire</a> 2018.<br><a href="/blogging-studio-jekyll/LICENSE.txt">Libre de droits sous license MIT</a></p>
+
+      <!-- brand -->
+      <p>Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a></p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blogging-studio-jekyll/index.html" title="Accueil">Blogging StudioJekyll</a>
+            <small>Suivez le guide</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  
+  <header class="post-header">
+    <h1 class="page-title">Cloner un site modèle à partir de GitHub</h1>
+    <div class="post-meta">
+      <div class="tagline">
+      
+      </div>
+    </div>
+  </header>
+      
+  <blockquote>
+  <p><em>Prérequis</em><br>
+<a href="/blogging-studio-jekyll/guide-installation-studiojekyll.html"><img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png" height="20" width="20"> installer l’environnement de travail</a></p>
+</blockquote>
+
+<hr>
+
+<p>Dans ce guide nous allons tout faire à partir de l’IDE de Visual Studio Code.</p>
+
+<p>Donc commencons par ouvrir Visual Studio Code puis à fermer le dossier en cours <code class="highlighter-rouge">[CTRL+K F]</code>.</p>
+
+<h2 id="-git-clone">&gt; Git Clone</h2>
+
+<p>Puis lancons la commande ‘Git Clone’ à partir du clavier <code class="highlighter-rouge">[CTRL+SHIFT+P]</code> et en saisissant <code class="highlighter-rouge">&gt;Git clone</code> puis <code class="highlighter-rouge">[enter]</code>.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/cmd-gitclone.png" alt="cmd-gitclone.png"></p>
+
+<p>Ensuite nous devons choisir le modèle de site à utiliser. Ici nous choisirons <strong>studiojekyll-minimax</strong> : https://github.com/mikemaggire/studiojekyll-minimax</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/choix-model.png" alt="choix-model.png"></p>
+
+<p>Enfin nous devons préciser l’emplacement des sources de notre nouveau site en local :</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/choix-nomrepo.png" alt="choix-nomrepo.png"></p>
+
+<p>Puis confirmons l’ouverture du projet dans Visual Studio.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/msg-ouvrirrepo.png" alt="msg-ouvrirrepo.png"></p>
+
+<p>OK ! Voilà à quoi cela doit ressembler :</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/freshnewsite.png" alt="freshnewsite.png"></p>
+
+<p>Bon maintenant vérifions que l’<a href="/blogging-studio-jekyll/guide-installation-studiojekyll.html">installation de votre environnement</a> s’est correctement déroulée. Faites une première génération de votre site simplement avec <code class="highlighter-rouge">[CTRL+SHIFT+B]</code>. Cela déclenche la tache de build en local avec la configuration spécifique à studiojekyll. Vous avez la fenêtre du terminal qui s’ouvre et en quelque secondes vous avez le résultat. <em>1.055 secondes précisement sur ma machine !</em></p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/buildpassed.png" alt="buildpassed.png"></p>
+
+<p class="message-yellow"> <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> il est important qu’il n’y ait pas d’erreur au niveau de ce premier build avant de continuer. </p>
+
+<h2 id="live-rendering">Live rendering</h2>
+
+<p>Pour terminer cette première étape lançons le <em>live rendering</em> avec <code class="highlighter-rouge">[CTRL+SHIFT+R]</code>. Cela relance la génération du site en mode <em>watch</em> et cela ouvre votre navigateur avec notre site.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/liverending-output.png" alt="liverending-output.png"></p>
+
+<p>Une nouvelle tache s’est déclenchée et la sortie du traitement de rendu en tache de fond  apparait en parallèle dans le terminal integré à Visual Studio Code.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/liverenderong%20console.png" alt="liverenderong console.png"></p>
+
+<blockquote>
+  <p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> <em>Pour être plus précis deux taches de fond ont été lancées en parallèle. Tout d’abord le la géneration Jekyll et aussi le serveur web synchronisé qui sert les fichiers générés par jekyll. Dans la console on voit donc appraitre les messages des deux traitements.</em></p>
+</blockquote>
+
+<p>On va stopper le mode <code class="highlighter-rouge">live rendering</code> en interrompant le processus avec <code class="highlighter-rouge">[CTRL+C]</code> au niveau de la console de taches.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/arret-live-rendering.png" alt="arret-live-rendering.png"></p>
+
+<p class="message"> <em>Le repertoire contenant le projet sur votre PC porte le nom du repretoire cloné, c’est à dire <code class="highlighter-rouge">/studiojekyll-minimax</code>. Il peut être interessant de renommer ce repertoire. Pour cela vous devez d’abord refermer visual studio code puis le réouvrir après avoir renommer le repertoire sous windows.</em> </p>
+
+<h2 id="synchroniser-le-repository-avec-github">Synchroniser le repository avec GitHub</h2>
+
+<p>Ouvrez le terminal de visual studio <code class="highlighter-rouge">[CTRL+ù]</code> code et lancer les commandes suivantes :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm .git
+git init
+git add .
+git commit -m initialisation
+git remote add origin https://github.com/yourgitaccount/newrepo
+opn "https://github.com/yourgitaccount?tab=repositories" --ext=html
+# create the repo direcly onto github.com
+git push -u origin master
+
+</code></pre></div></div>
+
+<hr>
+
+<h2 id="prochaine-étape">Prochaine étape</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/blogging-studio-jekyll/guide/configuration-contenu.html"><img class="emoji" title=":fast_forward:" alt=":fast_forward:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/23e9.png" height="20" width="20"> configurer le contenu</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+  
+
+
+</article>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <!-- analytics --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23118933-9', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

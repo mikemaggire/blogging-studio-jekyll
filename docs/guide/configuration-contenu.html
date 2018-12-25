@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Prérequis :white_check_mark: Cloner un site modèle à partir de GitHub">
+
+  <title>Configurer contenu d'un nouveau site - Blogging StudioJekyll</title>
+
+  <link rel="alternate" type="application/rss+xml" title="Blogging StudioJekyll" href="/blogging-studio-jekyll/feed.xml">
+  <link rel="canonical" href="http://wiki.maggire.net/blogging-studio-jekyll/guide/configuration-contenu.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/minimax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- social icons and others -->
+  <link rel="stylesheet" href="/blogging-studio-jekyll/assets/css/font-awesome.min.css" type="text/css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/blogging-studio-jekyll/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/blogging-studio-jekyll/favicon.ico">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body class="theme-base-color">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Guides pour creer rapidement des sites web sécurisés et performants avec Jekyll et Visual Studio sous Windows.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <!-- index -->
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/">Accueil</a>
+
+    <!-- blog -->
+    
+    <a class="sidebar-nav-item" href="/blogging-studio-jekyll/blog/index.html">Blog</a>
+    
+
+    <!-- pages --><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-installation-studiojekyll.html">Guide installation</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-nouveau-site-studiojekyll.html">Guide nouveau site</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/guide-rediger-publier-studiojekyll.html">Guide rédaction &amp; publication</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/tags.html">Tags</a><a class="sidebar-nav-item" href="/blogging-studio-jekyll/a-propos.html">A propos</a></nav>
+
+  <div class="sidebar-item">
+
+      <!-- social buttons -->
+      <p><a href="https://twitter.com/mikemaggire" class="fa fa-twitter"></a>
+        <a href="https://github.com/mikemaggire" class="fa fa-github"></a><a href="mailto:mike.maggire@gmail.com" class="fa fa-envelope"></a><a href="/feed.xml" class="fa fa-rss"></a>
+      </p>
+
+      <!-- version -->
+      <p><br>
+          v0.12.0</p>
+
+      <!-- copyright -->
+      <p>© 2018 <a href="https://twitter.com/mikemaggire">Mike Maggire</a> 2018.<br><a href="/blogging-studio-jekyll/LICENSE.txt">Libre de droits sous license MIT</a></p>
+
+      <!-- brand -->
+      <p>Propulsé par <a href="http://wiki.maggire.net/blogging-studio-jekyll/">StudioJekyll</a></p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blogging-studio-jekyll/index.html" title="Accueil">Blogging StudioJekyll</a>
+            <small>Suivez le guide</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  
+  <header class="post-header">
+    <h1 class="page-title">Configurer contenu d'un nouveau site</h1>
+    <div class="post-meta">
+      <div class="tagline">
+      
+      </div>
+    </div>
+  </header>
+      
+  <blockquote>
+  <p><em>Prérequis</em><br>
+<a href="/blogging-studio-jekyll/guide/cloner-site.html"><img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png" height="20" width="20"> Cloner un site modèle à partir de GitHub</a></p>
+</blockquote>
+
+<hr>
+
+<p>Dans ce guide nous allons :</p>
+<ol>
+  <li>Modifier le fichier <code class="highlighter-rouge">_config.yml</code>
+</li>
+  <li>Modifier le fichier <code class="highlighter-rouge">index.html</code>
+</li>
+  <li>Modifier le fichier <code class="highlighter-rouge">package.json</code>
+</li>
+  <li>Choisir la couleur de notre site</li>
+  <li>Personaliser la page à propos</li>
+  <li>Ecrire le message de bienvenue</li>
+  <li>Tester et enregistrer notre travail</li>
+</ol>
+
+<hr>
+
+<h2 id="1-le-fichier-_configyml">1. le fichier _config.yml</h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">########################</span>
+<span class="c1"># Configuration initiale</span>
+<span class="c1">########################</span>
+<span class="c1"># C'est ici que vous définissez les paramètres initiaux de vore nouveau site. </span>
+<span class="c1"># Sivous regardez dans vos fichiers HTML, vous verrez qu'ils y accedent</span>
+<span class="c1"># via Blogging StudioJekyll, mike.maggire@gmail.com, et ainsi de suite.</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Le titre de votre site</span>
+<span class="na">tagline</span><span class="pi">:</span> <span class="s">Votre tagline</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS.</span> 
+
+<span class="na">copyright</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Votre copyright</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">https://votre-domaine.com/auteur-copyright.html</span>
+  <span class="na">licence</span><span class="pi">:</span> <span class="s">Libre de droits sous license MIT</span>
+
+<span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Votre pseudo</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">https://twitter.com/mikemaggire</span>
+
+<span class="c1"># id utilisés pour faire apparaitre les boutons réseaux sociaux sur le site</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">votre-email@example.com</span>
+<span class="na">twitter_userid</span><span class="pi">:</span> <span class="s">mikemaggire</span>
+<span class="na">github_userid</span><span class="pi">:</span>  <span class="s">mikemaggire</span>
+<span class="c1">#gplus_userid: +mikemaggire</span>
+<span class="c1">#facebook_userid: mikemaggire</span>
+<span class="c1">#linkedin_userid: mikemaggire</span>
+</code></pre></div></div>
+<hr>
+
+<h2 id="2-le-fichier-indexhtml">2. Le fichier index.html</h2>
+
+<p><strong>1ere option</strong> : vos visiteurs arrivent directement sur le blog</p>
+
+<p>Supprimez la ligne suivante et remplacez là éventuellement par votre message de bienvenue.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Vous pouvez ajouter votre message de bienvenue au dessus des publications. :rocket</span><span class="pi">:</span>
+</code></pre></div></div>
+
+<p><strong>2eme option</strong> : la page d’accueil de votre site est une page fixe</p>
+
+<p>…et vous avez éventuellement un blog mais qui est accessible par la barre de navigation.</p>
+
+<blockquote>
+  <p>TODO:</p>
+</blockquote>
+
+<h2 id="3-réinitialiser-le-numéro-de-version">3. Réinitialiser le numéro de version</h2>
+
+<p>Dans le fichier <code class="highlighter-rouge">package.json</code>, initialisez le numéro de version à 0.1.0</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">        </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1.0"</span><span class="p">,</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="4-choisissez-la-couleur">4. Choisissez la couleur</h2>
+
+<p>Ouvrez le fichier <code class="highlighter-rouge">_studiojekyll/_config.scss</code> et choisissez la couleur soit en prenant une des valeurs proposées soit avec votre propre couleur.</p>
+
+<p><img src="/blogging-studio-jekyll/assets/img/chooseyourcolor.png" alt="chooseyourcolor.png"></p>
+
+<h2 id="5-personnalisez-la-page-a-propos">5. Personnalisez la page ‘A propos’</h2>
+
+<blockquote>
+  <p>TODO:</p>
+</blockquote>
+
+<h2 id="6-ecrivez-votre-message-de-bienvenue">6. Ecrivez votre message de bienvenue</h2>
+
+<blockquote>
+  <p>TODO:</p>
+</blockquote>
+
+<h2 id="6-et-pour-terminer">6. Et pour terminer</h2>
+
+<p>Voyons le résultat avec [CTRL+SHIFT+R].</p>
+
+<p>Si tout est ok alors nous pouvons arreter le <em>live rendering</em> avec [CTRL+C] dans le terminal au niveau de la tache ‘1: Tâche - liverendering’.</p>
+
+<p>Puis nous allons enregistrer notre travail avant de réaliser la première publication en test.</p>
+
+<p>Dans VS Code, ouvrez le controle de code source en clickant sur l’icon correspondant ou bien avec [CTRL+MAJ+G]. Saisissez le message <code class="highlighter-rouge">contenu configuré</code>, puis [CTRL+ENTER].</p>
+
+<p>C’est fait. Il ne reste plus qu’à synchroniser pour sauvegarder sur GitHub : Menu <code class="highlighter-rouge">.../Synchroniser</code>.</p>
+
+<hr>
+
+<h2 id="prochaine-étape">Prochaine étape</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/blogging-studio-jekyll/guide/configuration-publication.html"><img class="emoji" title=":fast_forward:" alt=":fast_forward:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/23e9.png" height="20" width="20"> configurer la publication</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+  
+
+
+</article>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <!-- analytics --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23118933-9', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>
