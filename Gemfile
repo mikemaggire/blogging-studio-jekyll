@@ -11,7 +11,7 @@ source "https://rubygems.org"
 # references : gem groups http://bundler.io/v1.3/groups.html
 
 # Happy Jekylling!
-gem "jekyll", "3.5.0"
+gem "jekyll", "3.8.5"
 
 # required by windows to ensure proper --watch
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
