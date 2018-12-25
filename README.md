@@ -2,9 +2,19 @@
 
 Ce repository contient les sources du site [Bloggez avec Studio Jekyll sous Windows](http://wiki.maggire.net/blogging-studio-jekyll)
 
-Ce site a été créé avec Jekyll3 et Visual Studio Code sous Windows 10.
+Ce site a été créé avec Jekyll3 et Visual Studio Code sous Windows 10. Il est publié sous GitHubPages.
 
-Voir le [reste à faire et le backlog](TODO.md)
+## Instructions
+
+Ce site utilise la [version "3.8.5"](https://jekyllrb.com/news/releases/) de Jekyll.
+
+Pour réinitialiser les dépendances, supprimer le fichier `Gemfile.lock` et le regenérer avec la commmande :
+
+```
+> bundle install
+```
+
+Lancer la tache 
 
 --------------
 

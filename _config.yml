@@ -84,9 +84,8 @@ plugins:
  - jekyll-sitemap
  - jekyll-paginate
 
-# Nous forcons le traitement de .htaccess
+# Nous forcons le traitement de openurl
 include: 
-  - .htaccess
   - openurl.bat
 
 # Exclusions spécifiques à VS

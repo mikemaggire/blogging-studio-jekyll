@@ -17,14 +17,13 @@
                 "createversionfile": "node _studiojekyll\\createSiteVersionFile.js && git describe --abbrev=0 --tags >> _studiojekyll\\_version.yml",
                 "prebuild:test": "npm version patch && git push origin --tags && npm run createversionfile",
                 "build:test": "SET JEKYLL_ENV=test&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_test.yml,_studiojekyll\\_version.yml",
-                "prebuild:prod": "npm version minor && git push origin --tags && npm run createversionfile",
+                "prebuild:prodxxx": "npm version minor && git push origin --tags && npm run createversionfile",
                 "build:prod": "SET JEKYLL_ENV=production&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml,_studiojekyll\\_version.yml",
                 "predeploy:test": "npm run build:test",
                 "deploy:test": ".\\_studiojekyll\\deploy2test.bat",
                 "postdeploy:test": ".\\_site_ready2deploy\\openurl.bat",
-                "predeploy:prod": "npm run build:prod",
-                "deploy:prod": ".\\_studiojekyll\\deploy2prod.bat",
-                "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat"
+                "deploy:prod": "npm run build:prod",
+                "postdeploy:prod": ".\\_siteprod\\openurl.bat"
         },
         "dependencies": {
                 "write": "~0.3.3"
