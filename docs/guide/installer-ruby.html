@@ -106,8 +106,7 @@
   <p>Ruby est le langage de programmation dans lequel est écrit <code class="highlighter-rouge">Jekyll</code>. Nous devons installer :</p>
 
 <ol>
-  <li>l’interpreteur <code class="highlighter-rouge">ruby</code> lui même,</li>
-  <li>le kit de développement utilisé par quelques pluggins,</li>
+  <li>l’interpreteur <code class="highlighter-rouge">ruby</code> lui même</li>
   <li>des plugins ruby.</li>
 </ol>
 
@@ -117,13 +116,17 @@
 
 <p>Telechargez et executez <a href="https://rubyinstaller.org/downloads/">RubyInstaller for windows</a>.</p>
 
-<p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> Jekyll V3 à besoin de Ruby en version supérieure à la 2.0.0</p>
+<p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> Jekyll V3 à besoin de Ruby en version supérieure à la 2.2.5. Ici nous utilisons la version 2.5.3.</p>
 
-<p><img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20">  Vous devez cocher <code class="highlighter-rouge">Add Ruby Executables to your PATH</code>.</p>
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20">  Vous devez cocher <code class="highlighter-rouge">MSYS2 development toolchain 2018-10-21</code>.</p>
 
 <p><img src="/blogging-studio-jekyll/assets/img/rubyinstaller3.png" alt="install3"></p>
 
-<p>Vous pouvez vérifier que le programme est bien installé en allant dans la liste des programmes et fonctionnalités du panneau de configuration de votre ordinateur. Soit via le <code class="highlighter-rouge">menu démarrer</code>, soit avec la commande <code class="highlighter-rouge">&gt; appwiz.cpl</code> pour ouvrir le panneau de configuration de Windows:</p>
+<p>Vous pouvez vérifier que le programme est bien installé en allant dans la liste des programmes et fonctionnalités du panneau de configuration de votre ordinateur. Soit via le <code class="highlighter-rouge">menu démarrer</code>, soit avec la commande suivante:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ouvre le panneau de configuration de Windows</span>
+<span class="o">&gt;</span> appwiz.cpl 
+</code></pre></div></div>
 
 <p><img src="/blogging-studio-jekyll/assets/img/rubyinstaller5.png" alt="install5"></p>
 
@@ -139,29 +142,14 @@
 
 <hr>
 
-<h2 id="2-installer-le-kit-de-développement-de-ruby">2. Installer le <em>kit de développement de Ruby</em>
+<h2 id="2-kit-de-développement-de-ruby">2. <em>kit de développement de Ruby</em>
 </h2>
 
 <blockquote>
   <p><em>Si vous aviez deja installé Ruby auparavent, je vous recommande de lancer un update via la commande <code class="highlighter-rouge">&gt; gem update</code> avant de continuer</em></p>
 </blockquote>
 
-<p>Pour que certains programmes <code class="highlighter-rouge">ruby</code> fonctionnent et tout particulièrement certains plugins de jekyll, nous avons également besoin d’installer le kit de développement Ruby. Ce programme se trouve aussi sur la page de telechargement de <a href="https://rubyinstaller.org/downloads/">RubyInstaller</a>.</p>
-
-<p><img src="/blogging-studio-jekyll/assets/img/ruby-devkit-install.png" alt="ruby-devkit-install"></p>
-
-<p>Une fois téléchargé, vous devez lancer l’executable qui propose une décompression dans un repertoire de votre choix. Choisissez un emplacement définitif. Nous proposons de choisir un sous-repertoire de ruby que nous appelerons ‘devkit’. Les fichiers telechargés et décompressés doivent donc se trouver dans <code class="highlighter-rouge">C:/ruby23-x64/devkit/</code>.</p>
-
-<p>Ensuite il faut ouvrir un fenêtre de commandes dans ce repertoire et lancer successivement trois commandes d’initialisation :</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> devkitvars.bat
-<span class="o">&gt;</span> ruby dk.rb init
-<span class="o">&gt;</span> ruby dk.rb <span class="nb">install</span>
-</code></pre></div></div>
-
-<p><img src="/blogging-studio-jekyll/assets/img/init-devkit-ruby.png" alt="init-devkit-ruby.png"></p>
-
-<p><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> Il est important que cette installation soit réussie. Aussi si vous avez besoin de plus d’explications ou d’aides sur les messages d’erreur rencontrés vous pouvez aller regarder du coté du <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">wiki dédié au kit de development de ruby</a>.</p>
+<p>Pour que certains programmes <code class="highlighter-rouge">ruby</code> fonctionnent et tout particulièrement certains plugins de jekyll, nous avons besoin d’installer le kit de développement Ruby. Depuis la version 2.4 de ruby ce programme a été automatiquemnt été installé si vous avez bien coché <code class="highlighter-rouge">MSYS2</code> lors de l’installation precedente.</p>
 
 <hr>
 
