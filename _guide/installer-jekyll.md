@@ -43,7 +43,7 @@ Il existe plusieurs extensions Jekyll qui permettent d'enrichir ses capacités. 
 
 - **jekyll-feed** : pour intégrer un flux rss à votre site
 - **emoji_for_jekyll** : pour intégrer des emoji dans les pages de votre site
-- **tzinfo** : pour prendre en compte les fuseaux horaires dans les calculs de dates
+- **tzinfo** : pour prendre en compte les fuseaux horaires dans les calculs de dates. Cette extension est requise pour une installation de jekyll sous Windows.
 - **rouge** : pour formater automatiquement des extraits de code dans vos publications
 
 Lancez successivement les commandes suivantes pour les installer :
@@ -53,7 +53,6 @@ Lancez successivement les commandes suivantes pour les installer :
 > gem install emoji_for_jekyll
 > gem install tzinfo
 > gem install tzinfo-data
-> gem install rouge
 > gem install jekyll-sitemap
 ```
 
@@ -70,6 +69,8 @@ Yes, Jekyll est opérationnel sur votre PC ! :+1:
 ### _Références_
 
 - Site officiel de [Jekyll](https://jekyllrb.com/)
-- Liste des [pluggins Jekyll](https://jekyllrb.com/docs/plugins/#available-plugins)
+- Notes d'installation de [Jekyll sous Windows](https://jekyllrb.com/docs/installation/windows/)
+- [Liste des pluggins Jekyll](https://jekyllrb.com/docs/plugins/#available-plugins)
 - [documentation de `gem install`](http://guides.rubygems.org/command-reference/#gem-install)
-- Le [package Jekyll](https://rubygems.org/gems/jekyll)
+- [package Jekyll](https://rubygems.org/gems/jekyll)
+- Notes de releases de jekyll (https://jekyllrb.com/news/releases/)

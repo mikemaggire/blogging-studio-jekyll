@@ -40,9 +40,9 @@ Et si vous voulez changer d'hebergement ou de type de serveur, rien de plus simp
 
 ---
 
-## Processus de publication type DEVOPS
+## Processus de publication pro
 
-1. **Clonez un site type** (template projet visual studio que nous fournissons) dans votre environnement de travail local.
+1. **Clonez un site type** (à partir d'un template projet visual studio) dans votre environnement de travail local.
 1. Configurez quelques variables.
 1. Testez en local.
 
@@ -53,11 +53,11 @@ Et si vous voulez changer d'hebergement ou de type de serveur, rien de plus simp
     ![tracking-syntax-problems.png]({{ site.baseurl }}/assets/img/tracking-syntax-problems.png)
 
 1. Sauvegardez les brouillons ou vos modifications sans être obligé de les publier. D'autres personnes peuvent contribuer ou corriger (via Git).
-1. Automatisez un plan de tests (à venir).
+1. Automatisez un plan de tests.
 1. Publiez vers un serveur de tests utilisateurs.
 1. Publiez vers un serveur de production.
 
-> :+1: _la rédaction de votre contenu est itératif et vivant et le processus de type DEVOPS permet une intégration continue et un enrichisement permanent de votre site._
+> :+1: _la rédaction de votre contenu est itératif et vivant. Le processus de publication permet une intégration continue et un enrichisement permanent de votre site._
 
 ---
 
@@ -74,7 +74,7 @@ Ecrire le contenu des pages et des articles est simple et facile avec _`Jekyll`_
 - **Responsive** pour fonctionner aussi bien sur desktop que sur tablet ou sur smartphone.
 - Intégration des toutes dernières fonctionnalités de **HTML5** et de **CSS3** reconnus par les derniers navigateurs.
 - Transpiler **SASS** intégré.
-- Intégration de **scripts** JS ou Angular (à venir)
+- Intégration de **scripts** JS ou Angular
 - ...
 
 > :+1: _Avec `Studio Jekyll` pas de compromis sur le design et la qualité._

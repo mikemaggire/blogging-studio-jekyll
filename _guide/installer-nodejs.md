@@ -32,8 +32,6 @@ Nous allons donc installer :
 
 Pour voir quelle version est installée, vous pouvez aussi utiliser la commande `> node -v`
 
-![check-node-version]({{ site.baseurl }}/assets/img/check-node-version.png)
-
 ---
 
 ## 2. lite-server pour Windows

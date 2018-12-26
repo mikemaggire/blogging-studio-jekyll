@@ -15,7 +15,8 @@
                 "prebuild:deploy": "bundle exec jekyll clean && rimraf docs && md docs",
                 "build:deploy": "bundle exec jekyll build",
                 "createversionfile": "node _studiojekyll\\createSiteVersionFile.js && git describe --abbrev=0 --tags >> _studiojekyll\\_version.yml",
-                "prebuild:prod": "npm version minor && git push origin --tags && npm run createversionfile",
+                "setminorversion": "npm version minor && git push origin --tags && npm run createversionfile",
+                "setmajorversion": "npm version major && git push origin --tags && npm run createversionfile",
                 "build:prod": "SET JEKYLL_ENV=production&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml,_studiojekyll\\_version.yml",
                 "deploy:prod": "npm run build:prod"
         },
